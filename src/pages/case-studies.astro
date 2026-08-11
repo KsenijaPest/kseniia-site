@@ -1,0 +1,64 @@
+---
+import Layout from '../layouts/Layout.astro';
+
+// TODO: replace each placeholder case study with real data.
+// Do NOT use real client/company names unless confirmed there's no NDA restriction.
+const caseStudies = [
+  {
+    vertical: "Health Insurance",
+    name: "[FILL IN: account name or general label]",
+    context: "[FILL IN: 1-2 sentences on the business and the problem]",
+    budget: "[FILL IN: $X/month or $X/day]",
+    platforms: "Google Ads · Microsoft Ads",
+    actions: ["[FILL IN]", "[FILL IN]"],
+    result: "[FILL IN: e.g. -X% CPA / +X% conversion volume]"
+  },
+  {
+    vertical: "Lead Gen",
+    name: "iHealthQuotes",
+    context: "[FILL IN]",
+    budget: "[FILL IN]",
+    platforms: "[FILL IN]",
+    actions: ["[FILL IN]"],
+    result: "[FILL IN]"
+  },
+  {
+    vertical: "Mental Health",
+    name: "[FILL IN]",
+    context: "[FILL IN]",
+    budget: "[FILL IN]",
+    platforms: "[FILL IN]",
+    actions: ["[FILL IN]"],
+    result: "[FILL IN]"
+  }
+];
+
+const LAST_UPDATED = "August 2026";
+---
+
+<Layout
+  title="Case Studies"
+  description="Real results managing paid search and paid social accounts for lead generation businesses."
+>
+  <section>
+    <h1>Results</h1>
+    <p>Case studies drawn from real accounts I've managed. Screenshots are watermarked; client names shown only where permitted.</p>
+  </section>
+
+  {caseStudies.map((cs) => (
+    <section class="split-card" style="margin-bottom: 2rem;">
+      <p class="stat-label">{cs.vertical}</p>
+      <h2>{cs.name}</h2>
+      <p><strong>Context:</strong> {cs.context}</p>
+      <p><strong>Budget scale:</strong> {cs.budget}</p>
+      <p><strong>Platforms:</strong> {cs.platforms}</p>
+      <p><strong>What I did:</strong></p>
+      <ul>
+        {cs.actions.map((a) => <li>{a}</li>)}
+      </ul>
+      <p><strong>Result:</strong> {cs.result}</p>
+    </section>
+  ))}
+
+  <p class="updated-note">Updated: {LAST_UPDATED}</p>
+</Layout>

@@ -1,0 +1,86 @@
+---
+import Layout from '../layouts/Layout.astro';
+
+const personSchema = {
+  "@context": "https://schema.org",
+  "@type": "Person",
+  "name": "Kseniia Shermin",
+  "jobTitle": "Performance Marketing Manager",
+  "description": "Performance Marketing Manager specializing in lead generation at scale across Google Ads, Microsoft Ads, and Meta Ads.",
+  "url": "https://kseniiashermin.com",
+  "sameAs": [
+    "https://www.linkedin.com/in/kseniiashermin/"
+  ]
+};
+
+const professionalServiceSchema = {
+  "@context": "https://schema.org",
+  "@type": "ProfessionalService",
+  "name": "Kseniia Shermin - Performance Marketing",
+  "description": "Lead generation focused paid search and paid social consulting for B2B and service businesses. Google Ads, Microsoft Ads, and Meta Ads audits, consultations, and account management.",
+  "areaServed": "Worldwide",
+  "priceRange": "$$$"
+};
+---
+
+<Layout
+  title="Performance Marketing Manager | Lead Gen at Scale"
+  description="10+ years running paid search and paid social for B2B and service businesses. Google Ads, Microsoft Ads, and Meta Ads accounts spending over $100,000/day."
+  schema={[personSchema, professionalServiceSchema]}
+>
+  <section class="hero">
+    <h1>Performance Marketing Manager &mdash; Lead Gen at Scale</h1>
+    <div class="tldr">
+      10+ years running paid search and paid social for B2B and service businesses.
+      Managing Google Ads and Microsoft Ads accounts spending over $100,000 per day,
+      plus Meta Ads, LinkedIn Ads, and virtually any pay-per-click platform.
+    </div>
+
+    <div class="stats-row">
+      <div class="stat">
+        <span class="stat-number">10+</span>
+        <span class="stat-label">Years of experience</span>
+      </div>
+      <div class="stat">
+        <span class="stat-number">$100K+</span>
+        <span class="stat-label">Daily ad spend managed</span>
+      </div>
+      <div class="stat">
+        <span class="stat-number">3</span>
+        <span class="stat-label">Platforms: Google, Microsoft, Meta</span>
+      </div>
+    </div>
+  </section>
+
+  <section class="split">
+    <h2>How can I help you?</h2>
+    <div class="split-cards">
+      <div class="split-card">
+        <h3>Looking to hire a Performance Marketing Manager</h3>
+        <p>10+ years of in-house and agency-side experience managing large-scale lead gen accounts. See my background and career results.</p>
+        <a href="/for-employers" class="btn btn-secondary">For Employers &rarr;</a>
+      </div>
+      <div class="split-card">
+        <h3>Need an audit, consultation, or account management</h3>
+        <p>A clear-eyed look at what's working and what isn't in your Google, Microsoft, or Meta Ads account &mdash; or ongoing management.</p>
+        <a href="/services" class="btn btn-primary">Work With Me &rarr;</a>
+      </div>
+    </div>
+  </section>
+
+  <section class="philosophy">
+    <h2>How I Work</h2>
+    <p><strong>Start with the goal, not the tactic.</strong> I focus on the number that actually matters &mdash; usually lowering cost per action and scaling conversion volume at the same time, not one at the expense of the other.</p>
+    <p><strong>Fix the foundation first.</strong> Before touching bids or creative, I make sure tracking and data are accurate. Every scaling decision after that is only as good as the data it's built on.</p>
+    <p><strong>Then experiment relentlessly.</strong> Once the foundation is solid, I test across every layer of the account &mdash; bidding strategy, audience signals, ad copy, landing pages &mdash; to find what actually moves the number.</p>
+  </section>
+
+  <section class="cta">
+    <h2>Ready to Turn Ad Spend Into Predictable Pipeline?</h2>
+    <p>Not sure where to start? Book a free intro call. Want a full breakdown of what's working and what isn't in your account? Request a paid audit.</p>
+    <div class="cta-buttons">
+      <a href="/services#audit" class="btn btn-primary">Request an Audit</a>
+      <a href="/contact" class="btn btn-secondary">Book a Call</a>
+    </div>
+  </section>
+</Layout>

@@ -1,0 +1,56 @@
+---
+import Layout from '../layouts/Layout.astro';
+
+const schema = {
+  "@context": "https://schema.org",
+  "@type": "Person",
+  "name": "Kseniia Shermin",
+  "jobTitle": "Performance Marketing Manager",
+  "description": "10+ years of experience in paid search and paid social, specializing in lead generation for B2B and service businesses.",
+  "url": "https://kseniiashermin.com/about"
+};
+---
+
+<Layout
+  title="About"
+  description="Performance Marketing Manager with 10+ years of experience in paid search and paid social lead generation."
+  schema={schema}
+>
+  <section>
+    <h1>About Me</h1>
+    <p>
+      I'm a Performance Marketing Manager with 10+ years of experience in paid search
+      and paid social. I manage large-scale Google Ads and Microsoft Ads accounts &mdash;
+      spending over $100,000 per day &mdash; alongside Meta Ads, LinkedIn Ads, and other
+      PPC platforms, working with any bidding logic or campaign structure the account
+      requires. My focus is lead generation: turning "we just need more leads" into a
+      predictable, forecastable pipeline.
+    </p>
+
+    <!-- TODO: add Google Ads / Microsoft Advertising certifications here as trust badges -->
+  </section>
+
+  <section>
+    <h2>How I Work</h2>
+    <div class="split-cards">
+      <div class="split-card">
+        <h3>Start with the goal, not the tactic</h3>
+        <p>I focus on the number that actually matters &mdash; usually lowering cost per action and scaling conversion volume at the same time, not one at the expense of the other.</p>
+      </div>
+      <div class="split-card">
+        <h3>Fix the foundation first</h3>
+        <p>Before touching bids or creative, I make sure tracking and data are accurate. Every scaling decision after that is only as good as the data it's built on.</p>
+      </div>
+      <div class="split-card">
+        <h3>Then experiment relentlessly</h3>
+        <p>Once the foundation is solid, I test across every layer of the account &mdash; bidding strategy, audience signals, ad copy, landing pages &mdash; to find what actually moves the number.</p>
+      </div>
+    </div>
+  </section>
+
+  <section>
+    <h2>What Clients &amp; Colleagues Say</h2>
+    <!-- TODO: replace with real LinkedIn recommendations / Upwork reviews once collected -->
+    <p class="updated-note">Reviews coming soon.</p>
+  </section>
+</Layout>
