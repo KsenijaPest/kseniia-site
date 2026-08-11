@@ -1,35 +1,41 @@
 ---
 import Layout from '../layouts/Layout.astro';
 
-// TODO: replace each placeholder case study with real data.
-// Do NOT use real client/company names unless confirmed there's no NDA restriction.
 const caseStudies = [
   {
     vertical: "Health Insurance",
-    name: "[FILL IN: account name or general label]",
-    context: "[FILL IN: 1-2 sentences on the business and the problem]",
-    budget: "[FILL IN: $X/month or $X/day]",
-    platforms: "Google Ads · Microsoft Ads",
-    actions: ["[FILL IN]", "[FILL IN]"],
-    result: "[FILL IN: e.g. -X% CPA / +X% conversion volume]"
-  },
-  {
-    vertical: "Lead Gen",
-    name: "iHealthQuotes",
-    context: "[FILL IN]",
-    budget: "[FILL IN]",
-    platforms: "[FILL IN]",
-    actions: ["[FILL IN]"],
-    result: "[FILL IN]"
+    name: "iHealthQuotes.com",
+    context: "As Director of Marketing at P7 Ventures, led multi-channel paid search strategy for this health insurance brand across all business units.",
+    platforms: "Google Ads, Microsoft Ads, other PPC platforms, vendors",
+    actions: [
+      "Led multi-channel paid search strategy, managing vendors and hitting aggressive CPA and volume targets",
+      "Architected automated data pipelines for real-time ROI tracking and full performance transparency"
+    ],
+    result: "Grew Google Ads performance by 75% and built a multi-channel acquisition strategy that helped the brand reach #24 on the Inc. 5000 list in 2025"
   },
   {
     vertical: "Mental Health",
-    name: "[FILL IN]",
-    context: "[FILL IN]",
-    budget: "[FILL IN]",
-    platforms: "[FILL IN]",
-    actions: ["[FILL IN]"],
-    result: "[FILL IN]"
+    name: "Riverhouse Wellness (riverhousewellness.com)",
+    context: "Built the entire performance marketing infrastructure for a new mental health and substance use disorder treatment brand from scratch, as part of P7 Ventures' behavioral health business unit.",
+    platforms: "Google Ads, Microsoft Ads",
+    actions: [
+      "Built the performance marketing infrastructure from scratch for a new brand launch"
+    ],
+    result: "Reached operational scale within 90 days"
+  },
+  {
+    vertical: "Insurance Lead Gen (Multi-Vertical)",
+    name: "Insurance Lead Gen at Scale",
+    context: "As Head of PPC managing insurance lead and call generation across six verticals: Medicare, health, life, final expense, auto, and home.",
+    budget: "$100,000+/day",
+    platforms: "Google Ads (Search, Display, Discovery, YouTube), Bing Ads, Facebook Ads",
+    actions: [
+      "Built and managed PPC campaigns across Google Ads, Bing Ads, and Facebook Ads for six insurance verticals simultaneously",
+      "Conducted in-depth data analysis using Tableau, QlikView, Google Analytics, and Power BI",
+      "Ran A/B and split tests to identify and act on growth opportunities",
+      "Recruited, trained, and managed a team of PPC specialists"
+    ],
+    result: "Consistently hit KPI and daily budget targets across all six verticals"
   }
 ];
 
@@ -50,7 +56,7 @@ const LAST_UPDATED = "August 2026";
       <p class="stat-label">{cs.vertical}</p>
       <h2>{cs.name}</h2>
       <p><strong>Context:</strong> {cs.context}</p>
-      <p><strong>Budget scale:</strong> {cs.budget}</p>
+      {cs.budget && <p><strong>Budget scale:</strong> {cs.budget}</p>}
       <p><strong>Platforms:</strong> {cs.platforms}</p>
       <p><strong>What I did:</strong></p>
       <ul>
