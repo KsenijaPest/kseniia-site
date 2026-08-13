@@ -138,9 +138,9 @@ const testimonials = [
     <h2>What Clients &amp; Colleagues Say</h2>
     <div class="split-cards testimonial-grid">
       {testimonials.map((t) => (
-        <div class="split-card testimonial-card">
+        <div class:list={["split-card", "testimonial-card", { "testimonial-card-screenshot": t.screenshot }]}>
           {t.screenshot ? (
-            <img src={t.screenshot} alt={`LinkedIn recommendation from ${t.name}`} loading="lazy" />
+            <img src={t.screenshot} alt="LinkedIn recommendation screenshot" loading="lazy" />
           ) : (
             <>
               {t.rating && (
@@ -149,7 +149,6 @@ const testimonials = [
               <p class="testimonial-quote">&ldquo;{t.quote}&rdquo;</p>
             </>
           )}
-          {t.name && <p class="testimonial-name">{t.name}, {t.title}</p>}
           <p class="testimonial-context">{t.context}</p>
         </div>
       ))}
@@ -170,10 +169,10 @@ const testimonials = [
 
   .testimonial-grid { grid-template-columns: 1fr 1fr; }
   @media (max-width: 640px) { .testimonial-grid { grid-template-columns: 1fr; } }
-  .testimonial-card { display: flex; flex-direction: column; }
+  .testimonial-card { display: flex; flex-direction: column; background: #fff; }
+  .testimonial-card-screenshot { grid-column: 1 / -1; }
   .testimonial-stars { color: #e0a821; letter-spacing: 0.15em; margin: 0 0 0.5rem; font-size: 1.1rem; }
   .testimonial-quote { flex: 1; font-style: italic; }
-  .testimonial-name { font-weight: 600; margin-top: 1rem; margin-bottom: 0; }
-  .testimonial-context { color: var(--color-muted); font-size: 0.85rem; margin-top: 0.2rem; }
-  .testimonial-card img { width: 100%; height: auto; border-radius: 4px; margin-bottom: 0.75rem; }
+  .testimonial-context { color: var(--color-muted); font-size: 0.85rem; margin-top: 0.75rem; }
+  .testimonial-card img { width: 100%; height: auto; border-radius: 4px; margin-bottom: 0.75rem; background: #fff; }
 </style>
