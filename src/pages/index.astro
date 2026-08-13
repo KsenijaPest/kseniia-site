@@ -17,7 +17,7 @@ const professionalServiceSchema = {
   "@context": "https://schema.org",
   "@type": "ProfessionalService",
   "name": "Kseniia Shermin - Performance Marketing",
-  "description": "Lead generation focused paid search and paid social consulting for B2B and service businesses. Google Ads, Microsoft Ads, and Meta Ads audits, consultations, and account management.",
+  "description": "Lead generation focused paid search and paid social consulting for B2C, B2B, and service businesses. Google Ads, Microsoft Ads, and Meta Ads audits, consultations, and account management.",
   "areaServed": "Worldwide",
   "priceRange": "$$$"
 };
@@ -25,29 +25,37 @@ const professionalServiceSchema = {
 
 <Layout
   title="Performance Marketing Manager | Lead Gen at Scale"
-  description="10+ years running paid search and paid social for B2B and service businesses. Google Ads, Microsoft Ads, and Meta Ads accounts spending over $100,000/day."
+  description="10+ years running paid search and paid social for B2C, B2B, and service businesses. Google Ads, Microsoft Ads, and Meta Ads accounts spending over $100,000/day."
   schema={[personSchema, professionalServiceSchema]}
 >
   <section class="hero">
-    <h1>Performance Marketing Manager &mdash; Lead Gen at Scale</h1>
-    <div class="tldr">
-      10+ years running paid search and paid social for B2B and service businesses.
-      Managing Google Ads and Microsoft Ads accounts spending over $100,000 per day,
-      plus Meta Ads, LinkedIn Ads, and virtually any pay-per-click platform.
-    </div>
+    <div class="hero-grid">
+      <div class="hero-main">
+        <h1>Performance Marketing Manager for Lead Gen at Scale</h1>
+        <div class="tldr">
+          10+ years running paid search and paid social for B2C, B2B, and service businesses.
+          Managing Google Ads and Microsoft Ads accounts spending over $100,000 per day,
+          plus Meta Ads, LinkedIn Ads, and virtually any pay-per-click platform.
+        </div>
 
-    <div class="stats-row">
-      <div class="stat">
-        <span class="stat-number">10+</span>
-        <span class="stat-label">Years of experience</span>
+        <div class="stats-row">
+          <div class="stat">
+            <span class="stat-number">10+</span>
+            <span class="stat-label">Years of experience</span>
+          </div>
+          <div class="stat">
+            <span class="stat-number">$100K+</span>
+            <span class="stat-label">Daily ad spend managed</span>
+          </div>
+          <div class="stat">
+            <span class="stat-number">3</span>
+            <span class="stat-label">Platforms: Google, Microsoft, Meta</span>
+          </div>
+        </div>
       </div>
-      <div class="stat">
-        <span class="stat-number">$100K+</span>
-        <span class="stat-label">Daily ad spend managed</span>
-      </div>
-      <div class="stat">
-        <span class="stat-number">3</span>
-        <span class="stat-label">Platforms: Google, Microsoft, Meta</span>
+      <div class="hero-actions">
+        <a href="/services#audit" class="btn btn-primary">Request an Audit</a>
+        <a href="/contact" class="btn btn-secondary">Book a Call</a>
       </div>
     </div>
   </section>
@@ -79,7 +87,7 @@ const professionalServiceSchema = {
           <rect x="13" y="13" width="10" height="10" fill="#FFB900"/>
         </svg>
         <h3>Microsoft Ads</h3>
-        <p>Search and Audience campaigns, import-and-optimize workflows from Google Ads, and the platform-specific levers that get missed when Microsoft Ads is treated as an afterthought instead of its own channel.</p>
+        <p>Microsoft Ads is not just an import job from Google Ads. It's a genuinely different platform with its own auction dynamics and audience network, and it rewards a different approach. Years of hands-on Microsoft Ads campaign management have consistently delivered strong traffic, lead quality, and ROI.</p>
       </div>
     </div>
     <p class="platforms-also"><strong>Also experienced with:</strong> Meta Ads, LinkedIn Ads, and other PPC platforms depending on where the audience actually is.</p>
@@ -95,7 +103,7 @@ const professionalServiceSchema = {
       </div>
       <div class="split-card">
         <h3>Need an audit, consultation, or account management</h3>
-        <p>A clear-eyed look at what's working and what isn't in your Google, Microsoft, or Meta Ads account &mdash; or ongoing management.</p>
+        <p>A clear-eyed look at what's working and what isn't in your Google, Microsoft, or Meta Ads account, or ongoing management.</p>
         <a href="/services" class="btn btn-primary">Work With Me &rarr;</a>
       </div>
     </div>
@@ -103,9 +111,9 @@ const professionalServiceSchema = {
 
   <section class="philosophy">
     <h2>How I Work</h2>
-    <p><strong>Start with the goal, not the tactic.</strong> I focus on the number that actually matters &mdash; usually lowering cost per action and scaling conversion volume at the same time, not one at the expense of the other.</p>
+    <p><strong>Start with the goal, not the tactic.</strong> I focus on the number that actually matters, usually lowering cost per action and scaling conversion volume at the same time, not one at the expense of the other.</p>
     <p><strong>Fix the foundation first.</strong> Before touching bids or creative, I make sure tracking and data are accurate. Every scaling decision after that is only as good as the data it's built on.</p>
-    <p><strong>Then experiment relentlessly.</strong> Once the foundation is solid, I test across every layer of the account &mdash; bidding strategy, audience signals, ad copy, landing pages &mdash; to find what actually moves the number.</p>
+    <p><strong>Then experiment relentlessly.</strong> Once the foundation is solid, I test across every layer of the account, including bidding strategy, audience signals, ad copy, and landing pages, to find what actually moves the number.</p>
   </section>
 
   <section class="cta">
@@ -122,4 +130,26 @@ const professionalServiceSchema = {
   .platform-card { text-align: left; }
   .platform-logo { margin-bottom: 1rem; display: block; }
   .platforms-also { color: var(--color-muted); }
+
+  .hero-grid {
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-start;
+    gap: 2.5rem;
+  }
+  .hero-main { flex: 1; min-width: 0; }
+  .hero-actions {
+    display: flex;
+    flex-direction: column;
+    gap: 1rem;
+    min-width: 200px;
+    padding-top: 0.5rem;
+  }
+  .hero-actions .btn { text-align: center; }
+
+  @media (max-width: 768px) {
+    .hero-grid { flex-direction: column; }
+    .hero-actions { flex-direction: row; width: 100%; }
+    .hero-actions .btn { flex: 1; }
+  }
 </style>

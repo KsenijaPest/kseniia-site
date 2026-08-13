@@ -6,9 +6,44 @@ const schema = {
   "@type": "Person",
   "name": "Kseniia Shermin",
   "jobTitle": "Performance Marketing Manager",
-  "description": "10+ years of experience in paid search and paid social, specializing in lead generation for B2B and service businesses.",
+  "description": "10+ years of experience in paid search and paid social, specializing in lead generation for B2C, B2B, and service businesses.",
   "url": "https://kseniiashermin.com/about"
 };
+
+const testimonials = [
+  {
+    quote: "Sienna is a terrific SEM manager! She is extremely knowledgeable about all things Google Ads and she knows how to deliver results. During the high seasons in our business, Sienna always showed up ready to deliver value, regardless of how long the hours were. Thank you Sienna for all the support and hard work!!!",
+    name: "Rodolfo Marrero",
+    title: "CTO & Co-Founder at Excel Impact, LLC",
+    context: "LinkedIn recommendation, November 2024"
+  },
+  {
+    quote: "I had the chance to work with Sienna on several projects in the behavioral healthcare space. She has strong experience with Paid Search, lead generation, and campaign management across Google and Bing Ads, including large daily budgets over $100K. What I liked about working with her was that she always focused not just on traffic, but on lead quality and overall business goals. She understands healthcare marketing well, works great with the team, and is very organized and professional in her work. Sienna is very experienced in PPC and digital marketing, and I'd definitely recommend her to any company looking for a strong paid search specialist.",
+    name: "Georgii Liapko",
+    title: "Senior SEO & Digital Marketing Manager",
+    context: "LinkedIn recommendation, May 2026"
+  },
+  {
+    quote: "Meeting Kseniia was a great pleasure. She's extremely knowledgeable about PPC, both on Google and Bing, something many people claim to know, but few actually possess. I highly recommend her for any project, especially if it involves insurance.",
+    context: "30 minute consultation"
+  },
+  {
+    quote: "Kseniia did several PPC audits for us and she was insightful, succinct and technically very proficient. I wouldn't have any hesitation working with her again.",
+    context: "PPC expert for ongoing agency work, large ad spend management"
+  },
+  {
+    quote: "Great media buyer and communicator. Highly recommend.",
+    context: "Paid search, call only focus"
+  },
+  {
+    quote: "Great to work with, very accommodating and knowledgeable; would definitely work with again.",
+    context: "YouTube Ads setup"
+  },
+  {
+    quote: "Ksenilia is an excellent communicator, and she innovates in the creation of ads and selection of keywords, etc. She is constantly seeking to improve and she does a GREAT job. We love her A+++++",
+    context: "Google Ads search campaigns setup"
+  }
+];
 ---
 
 <Layout
@@ -20,8 +55,8 @@ const schema = {
     <h1>About Me</h1>
     <p>
       I'm a Performance Marketing Manager with 10+ years of experience in paid search
-      and paid social. I manage large-scale Google Ads and Microsoft Ads accounts &mdash;
-      spending over $100,000 per day &mdash; alongside Meta Ads, LinkedIn Ads, and other
+      and paid social. I manage large-scale Google Ads and Microsoft Ads accounts,
+      spending over $100,000 per day, alongside Meta Ads, LinkedIn Ads, and other
       PPC platforms, working with any bidding logic or campaign structure the account
       requires. My focus is lead generation: turning "we just need more leads" into a
       predictable, forecastable pipeline.
@@ -75,7 +110,7 @@ const schema = {
     <div class="split-cards">
       <div class="split-card">
         <h3>Start with the goal, not the tactic</h3>
-        <p>I focus on the number that actually matters &mdash; usually lowering cost per action and scaling conversion volume at the same time, not one at the expense of the other.</p>
+        <p>I focus on the number that actually matters, usually lowering cost per action and scaling conversion volume at the same time, not one at the expense of the other.</p>
       </div>
       <div class="split-card">
         <h3>Fix the foundation first</h3>
@@ -83,15 +118,26 @@ const schema = {
       </div>
       <div class="split-card">
         <h3>Then experiment relentlessly</h3>
-        <p>Once the foundation is solid, I test across every layer of the account &mdash; bidding strategy, audience signals, ad copy, landing pages &mdash; to find what actually moves the number.</p>
+        <p>Once the foundation is solid, I test across every layer of the account, including bidding strategy, audience signals, ad copy, and landing pages, to find what actually moves the number.</p>
       </div>
     </div>
   </section>
 
   <section>
     <h2>What Clients &amp; Colleagues Say</h2>
-    <!-- TODO: replace with real LinkedIn recommendations / Upwork reviews once collected -->
-    <p class="updated-note">Reviews coming soon.</p>
+    <div class="split-cards testimonial-grid">
+      {testimonials.map((t) => (
+        <div class="split-card testimonial-card">
+          {t.screenshot ? (
+            <img src={t.screenshot} alt={`LinkedIn recommendation from ${t.name}`} loading="lazy" />
+          ) : (
+            <p class="testimonial-quote">&ldquo;{t.quote}&rdquo;</p>
+          )}
+          {t.name && <p class="testimonial-name">{t.name}, {t.title}</p>}
+          <p class="testimonial-context">{t.context}</p>
+        </div>
+      ))}
+    </div>
   </section>
 </Layout>
 
@@ -105,4 +151,12 @@ const schema = {
   .career-meta { color: var(--color-muted); font-size: 0.9rem; margin-top: 0; margin-bottom: 0.75rem; }
   .career-role ul { margin: 0; padding-left: 1.2rem; }
   .career-role li { margin-bottom: 0.4rem; }
+
+  .testimonial-grid { grid-template-columns: 1fr 1fr; }
+  @media (max-width: 640px) { .testimonial-grid { grid-template-columns: 1fr; } }
+  .testimonial-card { display: flex; flex-direction: column; }
+  .testimonial-quote { flex: 1; font-style: italic; }
+  .testimonial-name { font-weight: 600; margin-top: 1rem; margin-bottom: 0; }
+  .testimonial-context { color: var(--color-muted); font-size: 0.85rem; margin-top: 0.2rem; }
+  .testimonial-card img { width: 100%; height: auto; border-radius: 4px; margin-bottom: 0.75rem; }
 </style>

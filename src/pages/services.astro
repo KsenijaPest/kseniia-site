@@ -1,11 +1,8 @@
 ---
 import Layout from '../layouts/Layout.astro';
 
-// TODO: fill in real values before publishing, then update the FAQPage schema below.
-const MIN_BUDGET = "[FILL IN: e.g. $10,000/month]";
-const RESULTS_TIMELINE = "[FILL IN: e.g. 60-90 days]";
-const NDA_ANSWER = "[FILL IN: yes/no + details]";
-const TEAM_ANSWER = "[FILL IN: independently / with a team]";
+const MIN_BUDGET = "$10,000/month";
+const NDA_ANSWER = "Yes, if needed.";
 const LAST_UPDATED = "August 2026";
 
 const faqs = [
@@ -18,12 +15,8 @@ const faqs = [
     a: MIN_BUDGET
   },
   {
-    q: "How fast will I see results?",
-    a: RESULTS_TIMELINE
-  },
-  {
     q: "Do you work with e-commerce accounts?",
-    a: "My focus is lead generation for B2B and service businesses, not e-commerce."
+    a: "Yes, I have experience with large appliance e-commerce (30,000+ items) and I've worked across a wide range of consumer product categories, from electronics and home goods to outdoor, personal care, and apparel."
   },
   {
     q: "Which platforms do you work with?",
@@ -32,10 +25,6 @@ const faqs = [
   {
     q: "Do you sign NDAs?",
     a: NDA_ANSWER
-  },
-  {
-    q: "Do you work independently or with a team?",
-    a: TEAM_ANSWER
   }
 ];
 
@@ -79,12 +68,12 @@ const servicesSchema = [
 
 <Layout
   title="Work With Me"
-  description="Audits, consultations, and account management for Google Ads, Microsoft Ads, and Meta Ads &mdash; focused on lead generation for B2B and service businesses."
+  description="Audits, consultations, and account management for Google Ads, Microsoft Ads, and Meta Ads, focused on lead generation for B2C, B2B, and service businesses."
   schema={[faqSchema, ...servicesSchema]}
 >
   <section>
     <h1>Work With Me</h1>
-    <p>Lead generation focused paid search and paid social, for B2B and service businesses &mdash; not e-commerce.</p>
+    <p>Lead generation focused paid search and paid social, for B2C, B2B, and service businesses.</p>
   </section>
 
   <section id="audit">
@@ -95,7 +84,7 @@ const servicesSchema = [
 
   <section id="consultation">
     <h2>Consultation</h2>
-    <p>A focused strategy session &mdash; bring your specific questions or roadblocks, leave with a concrete plan.</p>
+    <p>A focused strategy session. Bring your specific questions or roadblocks, leave with a concrete plan.</p>
     <a href="/contact" class="btn btn-secondary">Book a Call</a>
   </section>
 
