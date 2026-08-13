@@ -11,40 +11,71 @@ const caseStudies = [
       "Led multi-channel paid search strategy, managing vendors and hitting aggressive CPA and volume targets",
       "Architected automated data pipelines for real-time ROI tracking and full performance transparency"
     ],
-    result: "Grew Google Ads performance by 75% and built a multi-channel acquisition strategy that helped the brand reach #24 on the Inc. 5000 list in 2025"
+    result: "Grew Google Ads performance by 75% and built a multi-channel acquisition strategy that helped the brand reach #24 on the Inc. 5000 list in 2025",
+    icon: "growth",
+    stat: { number: "75%", label: "Google Ads performance growth", secondary: "#24 on the Inc. 5000 list (2025)" }
   },
   {
     vertical: "Mental Health",
     name: "Riverhouse Wellness (riverhousewellness.com)",
     context: "Built the entire performance marketing infrastructure for a new mental health and substance use disorder treatment brand from scratch, as part of P7 Ventures' behavioral health business unit.",
-    platforms: "Google Ads, Microsoft Ads",
+    platforms: "Google Ads, Microsoft Ads, vendors, and specialized platforms such as recovery.com",
     actions: [
-      "Built the performance marketing infrastructure from scratch for a new brand launch"
+      "Built the entire performance marketing infrastructure, conversion tracking, and data pipelines from scratch for a new brand launch, using CallTrackingMetrics, Salesforce, and n8n"
     ],
-    result: "Reached operational scale within 90 days"
+    result: "Reached operational scale within 90 days",
+    icon: "launch",
+    stat: { number: "90", label: "days to operational scale", secondary: "Full infrastructure built from zero" }
   },
   {
     vertical: "Insurance Lead Gen (Multi-Vertical)",
     name: "Insurance Lead Gen at Scale",
     context: "As Head of PPC managing insurance lead and call generation across six verticals: Medicare, health, life, final expense, auto, and home.",
     budget: "$100,000+/day",
-    platforms: "Google Ads (Search, Display, Discovery, YouTube), Bing Ads, Facebook Ads",
+    platforms: "Google Ads (Search, Display, Discovery, YouTube), Bing Ads, Facebook Ads, and dozens of specialized PPC platforms",
     actions: [
       "Built and managed PPC campaigns across Google Ads, Bing Ads, and Facebook Ads for six insurance verticals simultaneously",
       "Conducted in-depth data analysis using Tableau, QlikView, Google Analytics, and Power BI",
       "Ran A/B and split tests to identify and act on growth opportunities",
       "Recruited, trained, and managed a team of PPC specialists"
     ],
-    result: "Consistently hit KPI and daily budget targets across all six verticals"
+    result: "Consistently hit KPI and daily budget targets across all six verticals",
+    icon: "ring6",
+    stat: { number: "$100K+", label: "managed daily ad spend", secondary: "Across 6 insurance verticals" }
+  },
+  {
+    vertical: "E-commerce (Home Appliances)",
+    name: "[FILL IN: account name or general label]",
+    context: "Managed paid search for a large e-commerce catalog spanning 30,000+ items in home appliances, plus a wide range of consumer product categories including electronics, home goods, outdoor, personal care, and apparel.",
+    platforms: "[FILL IN]",
+    actions: ["[FILL IN]"],
+    result: "[FILL IN]",
+    icon: "grid",
+    stat: { number: "30,000+", label: "SKUs managed", secondary: "Home appliances & consumer goods" }
   }
 ];
+
+const ringPoints = Array.from({ length: 6 }, (_, i) => {
+  const angle = (i / 6) * Math.PI * 2 - Math.PI / 2;
+  return {
+    x: Math.round(Math.cos(angle) * 50),
+    y: Math.round(Math.sin(angle) * 50)
+  };
+});
+
+const gridPoints = [];
+for (let row = 0; row < 3; row++) {
+  for (let col = 0; col < 6; col++) {
+    gridPoints.push({ x: col * 24, y: row * 24 });
+  }
+}
 
 const LAST_UPDATED = "August 2026";
 ---
 
 <Layout
   title="Case Studies"
-  description="Real results managing paid search and paid social accounts for lead generation businesses."
+  description="Real results managing paid search and paid social accounts for lead generation and e-commerce businesses."
 >
   <section>
     <h1>Results</h1>
@@ -52,7 +83,51 @@ const LAST_UPDATED = "August 2026";
   </section>
 
   {caseStudies.map((cs) => (
-    <section class="split-card" style="margin-bottom: 2rem;">
+    <section class="split-card case-study" style="margin-bottom: 2rem;">
+      <svg class="case-infographic" viewBox="0 0 560 200" role="img" aria-label={`${cs.stat.number} ${cs.stat.label}`}>
+        <rect width="560" height="200" rx="12" fill="#f4f2ec" />
+
+        {cs.icon === "growth" && (
+          <g transform="translate(370,30)" stroke="#2e3a87" stroke-width="4" fill="none" stroke-linecap="round" stroke-linejoin="round">
+            <polyline points="0,120 40,90 80,100 120,55 160,20" />
+            {[[0,120],[40,90],[80,100],[120,55],[160,20]].map(([x,y]) => (
+              <circle cx={x} cy={y} r="5" fill="#2e3a87" stroke="none" />
+            ))}
+          </g>
+        )}
+
+        {cs.icon === "launch" && (
+          <g transform="translate(430,30)">
+            <path d="M40 130 L40 20 M40 20 L18 48 M40 20 L62 48" stroke="#2e3a87" stroke-width="6" stroke-linecap="round" stroke-linejoin="round" fill="none" />
+            <circle cx="8" cy="115" r="4" fill="#2e3a87" opacity="0.35" />
+            <circle cx="72" cy="105" r="4" fill="#2e3a87" opacity="0.35" />
+            <circle cx="40" cy="140" r="4" fill="#2e3a87" opacity="0.35" />
+          </g>
+        )}
+
+        {cs.icon === "ring6" && (
+          <g transform="translate(460,100)">
+            {ringPoints.map((p, i) => (
+              <circle cx={p.x} cy={p.y} r="15" fill={i % 2 === 0 ? "#2e3a87" : "#7c8ce0"} opacity="0.9" />
+            ))}
+          </g>
+        )}
+
+        {cs.icon === "grid" && (
+          <g transform="translate(390,40)">
+            {gridPoints.map((p, i) => (
+              <rect x={p.x} y={p.y} width="18" height="18" rx="3" fill="#2e3a87" opacity={0.4 + (i % 4) * 0.15} />
+            ))}
+          </g>
+        )}
+
+        <text x="36" y="88" font-family="Georgia, 'Times New Roman', serif" font-size="52" font-weight="bold" fill="#2e3a87">{cs.stat.number}</text>
+        <text x="36" y="118" font-family="-apple-system, BlinkMacSystemFont, 'Segoe UI', sans-serif" font-size="16" fill="#6b7178">{cs.stat.label}</text>
+        {cs.stat.secondary && (
+          <text x="36" y="155" font-family="-apple-system, BlinkMacSystemFont, 'Segoe UI', sans-serif" font-size="14" fill="#16181d">{cs.stat.secondary}</text>
+        )}
+      </svg>
+
       <p class="stat-label">{cs.vertical}</p>
       <h2>{cs.name}</h2>
       <p><strong>Context:</strong> {cs.context}</p>
@@ -68,3 +143,13 @@ const LAST_UPDATED = "August 2026";
 
   <p class="updated-note">Updated: {LAST_UPDATED}</p>
 </Layout>
+
+<style>
+  .case-infographic {
+    width: 100%;
+    height: auto;
+    display: block;
+    margin-bottom: 1.5rem;
+    border-radius: 12px;
+  }
+</style>

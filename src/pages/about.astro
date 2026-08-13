@@ -25,23 +25,28 @@ const testimonials = [
   },
   {
     quote: "Meeting Kseniia was a great pleasure. She's extremely knowledgeable about PPC, both on Google and Bing, something many people claim to know, but few actually possess. I highly recommend her for any project, especially if it involves insurance.",
-    context: "30 minute consultation"
+    context: "30 minute consultation",
+    rating: 5
   },
   {
     quote: "Kseniia did several PPC audits for us and she was insightful, succinct and technically very proficient. I wouldn't have any hesitation working with her again.",
-    context: "PPC expert for ongoing agency work, large ad spend management"
+    context: "PPC expert for ongoing agency work, large ad spend management",
+    rating: 5
   },
   {
     quote: "Great media buyer and communicator. Highly recommend.",
-    context: "Paid search, call only focus"
+    context: "Paid search, call only focus",
+    rating: 5
   },
   {
     quote: "Great to work with, very accommodating and knowledgeable; would definitely work with again.",
-    context: "YouTube Ads setup"
+    context: "YouTube Ads setup",
+    rating: 5
   },
   {
     quote: "Ksenilia is an excellent communicator, and she innovates in the creation of ads and selection of keywords, etc. She is constantly seeking to improve and she does a GREAT job. We love her A+++++",
-    context: "Google Ads search campaigns setup"
+    context: "Google Ads search campaigns setup",
+    rating: 5
   }
 ];
 ---
@@ -131,7 +136,12 @@ const testimonials = [
           {t.screenshot ? (
             <img src={t.screenshot} alt={`LinkedIn recommendation from ${t.name}`} loading="lazy" />
           ) : (
-            <p class="testimonial-quote">&ldquo;{t.quote}&rdquo;</p>
+            <>
+              {t.rating && (
+                <p class="testimonial-stars" aria-label={`${t.rating} out of 5 stars`}>{"★".repeat(t.rating)}</p>
+              )}
+              <p class="testimonial-quote">&ldquo;{t.quote}&rdquo;</p>
+            </>
           )}
           {t.name && <p class="testimonial-name">{t.name}, {t.title}</p>}
           <p class="testimonial-context">{t.context}</p>
@@ -155,6 +165,7 @@ const testimonials = [
   .testimonial-grid { grid-template-columns: 1fr 1fr; }
   @media (max-width: 640px) { .testimonial-grid { grid-template-columns: 1fr; } }
   .testimonial-card { display: flex; flex-direction: column; }
+  .testimonial-stars { color: #e0a821; letter-spacing: 0.15em; margin: 0 0 0.5rem; font-size: 1.1rem; }
   .testimonial-quote { flex: 1; font-style: italic; }
   .testimonial-name { font-weight: 600; margin-top: 1rem; margin-bottom: 0; }
   .testimonial-context { color: var(--color-muted); font-size: 0.85rem; margin-top: 0.2rem; }
