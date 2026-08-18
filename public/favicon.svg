@@ -1,16 +1,16 @@
 <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 128 128">
-    <g class="click-marks" stroke="#2e3a87" stroke-width="7" stroke-linecap="round" fill="none">
+    <g class="click-marks" stroke="#2563eb" stroke-width="7" stroke-linecap="round" fill="none">
         <path d="M84 32 L98 18" />
         <path d="M96 56 L116 56" />
         <path d="M84 80 L98 94" />
     </g>
-    <path class="cursor" d="M26 14 L26 100 L45 82 L59 109 L73 101 L58 76 L84 72 Z" fill="#2e3a87" />
+    <path class="cursor" d="M26 14 L26 100 L45 82 L59 109 L73 101 L58 76 L84 72 Z" fill="#2563eb" />
     <style>
-        .click-marks { stroke: #2e3a87; }
-        .cursor { fill: #2e3a87; }
+        .click-marks { stroke: #2563eb; }
+        .cursor { fill: #2563eb; }
         @media (prefers-color-scheme: dark) {
-            .click-marks { stroke: #8f9ce8; }
-            .cursor { fill: #8f9ce8; }
+            .click-marks { stroke: #7ba7ff; }
+            .cursor { fill: #7ba7ff; }
         }
     </style>
 </svg>

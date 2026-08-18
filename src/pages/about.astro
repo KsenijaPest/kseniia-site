@@ -58,7 +58,8 @@ const testimonials = [
   description="Performance Marketing Manager with 10+ years of experience in paid search and paid social lead generation."
   schema={schema}
 >
-  <section>
+  <section class="about-intro">
+    <img class="about-photo" src="/kseniia-shermin.jpg" alt="Kseniia Shermin" width="180" height="180" />
     <h1>About Me</h1>
     <p>
       I'm a Performance Marketing Manager with 10+ years of experience in paid search
@@ -157,6 +158,15 @@ const testimonials = [
 </Layout>
 
 <style>
+  .about-photo {
+    width: 140px;
+    height: 140px;
+    border-radius: 50%;
+    object-fit: cover;
+    margin-bottom: 1.5rem;
+    box-shadow: 0 4px 20px rgba(20, 22, 31, 0.12);
+  }
+
   .career-role {
     border-bottom: 1px solid var(--color-line);
     padding: 1.5rem 0;

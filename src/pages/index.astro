@@ -29,33 +29,31 @@ const professionalServiceSchema = {
   schema={[personSchema, professionalServiceSchema]}
 >
   <section class="hero">
-    <div class="hero-grid">
-      <div class="hero-main">
-        <h1>Performance Marketing Manager for Lead Gen at Scale</h1>
-        <div class="tldr">
-          10+ years running paid search and paid social for B2C, B2B, and service businesses.
-          Managing Google Ads and Microsoft Ads accounts spending over $100,000 per day,
-          plus Meta Ads, LinkedIn Ads, and virtually any pay-per-click platform.
-        </div>
+    <img class="hero-photo" src="/kseniia-shermin.jpg" alt="Kseniia Shermin" width="140" height="140" />
+    <h1>Performance Marketing Manager for Lead Gen at Scale</h1>
+    <div class="tldr">
+      10+ years running paid search and paid social for B2C, B2B, and service businesses.
+      Managing Google Ads and Microsoft Ads accounts spending over $100,000 per day,
+      plus Meta Ads, LinkedIn Ads, and virtually any pay-per-click platform.
+    </div>
 
-        <div class="stats-row">
-          <div class="stat">
-            <span class="stat-number">10+</span>
-            <span class="stat-label">Years of experience</span>
-          </div>
-          <div class="stat">
-            <span class="stat-number">$100K+</span>
-            <span class="stat-label">Daily ad spend managed</span>
-          </div>
-          <div class="stat">
-            <span class="stat-number">5X-36X</span>
-            <span class="stat-label">Account growth delivered</span>
-          </div>
-        </div>
+    <div class="hero-actions">
+      <a href="/contact?interest=Audit" class="btn btn-primary">Request an Audit</a>
+      <a href="/contact?interest=Consultation" class="btn btn-secondary">Book a Call</a>
+    </div>
+
+    <div class="stats-row">
+      <div class="stat">
+        <span class="stat-number">10+</span>
+        <span class="stat-label">Years of experience</span>
       </div>
-      <div class="hero-actions">
-        <a href="/services#audit" class="btn btn-primary">Request an Audit</a>
-        <a href="/contact" class="btn btn-secondary">Book a Call</a>
+      <div class="stat">
+        <span class="stat-number">$100K+</span>
+        <span class="stat-label">Daily ad spend managed</span>
+      </div>
+      <div class="stat">
+        <span class="stat-number">5X-36X</span>
+        <span class="stat-label">Account growth delivered</span>
       </div>
     </div>
   </section>
@@ -120,8 +118,8 @@ const professionalServiceSchema = {
     <h2>Ready to Turn Ad Spend Into Predictable Pipeline?</h2>
     <p>Not sure where to start? Book a free intro call. Want a full breakdown of what's working and what isn't in your account? Request a paid audit.</p>
     <div class="cta-buttons">
-      <a href="/services#audit" class="btn btn-primary">Request an Audit</a>
-      <a href="/contact" class="btn btn-secondary">Book a Call</a>
+      <a href="/contact?interest=Audit" class="btn btn-primary">Request an Audit</a>
+      <a href="/contact?interest=Consultation" class="btn btn-secondary">Book a Call</a>
     </div>
   </section>
 </Layout>
@@ -131,25 +129,37 @@ const professionalServiceSchema = {
   .platform-logo { margin-bottom: 1rem; display: block; }
   .platforms-also { color: var(--color-muted); }
 
-  .hero-grid {
-    display: flex;
-    justify-content: space-between;
-    align-items: flex-start;
-    gap: 2.5rem;
+  .hero {
+    text-align: center;
+    max-width: 720px;
+    margin: 0 auto 4rem;
   }
-  .hero-main { flex: 1; min-width: 0; }
+
+  .hero-photo {
+    width: 140px;
+    height: 140px;
+    border-radius: 50%;
+    object-fit: cover;
+    margin: 0 auto 1.5rem;
+    display: block;
+    box-shadow: 0 4px 20px rgba(20, 22, 31, 0.12);
+  }
+
+  .hero .tldr { text-align: left; }
+
   .hero-actions {
     display: flex;
-    flex-direction: column;
+    justify-content: center;
     gap: 1rem;
-    min-width: 200px;
-    padding-top: 0.5rem;
+    flex-wrap: wrap;
+    margin-top: 2rem;
   }
-  .hero-actions .btn { text-align: center; }
+  .hero-actions .btn { min-width: 190px; }
 
-  @media (max-width: 768px) {
-    .hero-grid { flex-direction: column; }
-    .hero-actions { flex-direction: row; width: 100%; }
-    .hero-actions .btn { flex: 1; }
+  .hero .stats-row { justify-content: center; }
+
+  @media (max-width: 640px) {
+    .hero-actions { flex-direction: column; align-items: stretch; }
+    .hero-actions .btn { min-width: 0; }
   }
 </style>
