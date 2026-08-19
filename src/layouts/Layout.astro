@@ -104,10 +104,7 @@ const canonicalURL = new URL(Astro.url.pathname, Astro.site);
     </footer>
 
     <div class="cookie-banner" id="cookie-banner" hidden>
-      <p>
-        This site uses analytics cookies (Google Analytics, Microsoft Clarity) to understand
-        traffic and improve the site. Declining won't affect anything you can do here.
-      </p>
+      <p>This site uses analytics cookies to understand traffic. Declining won't affect your experience.</p>
       <div class="cookie-banner-actions">
         <button type="button" class="btn btn-secondary" id="cookie-decline">Decline</button>
         <button type="button" class="btn btn-primary" id="cookie-accept">Accept</button>
@@ -412,7 +409,7 @@ const canonicalURL = new URL(Astro.url.pathname, Astro.site);
     background: var(--color-bg);
     border-top: 1px solid var(--color-line);
     box-shadow: 0 -4px 20px rgba(20, 22, 31, 0.08);
-    padding: 1.25rem 2rem;
+    padding: 0.85rem 2rem;
     display: flex;
     align-items: center;
     justify-content: space-between;
@@ -420,9 +417,13 @@ const canonicalURL = new URL(Astro.url.pathname, Astro.site);
     flex-wrap: wrap;
   }
 
+  .cookie-banner[hidden] {
+    display: none;
+  }
+
   .cookie-banner p {
     margin: 0;
-    font-size: 0.9rem;
+    font-size: 0.8rem;
     color: var(--color-muted);
     max-width: 640px;
   }
@@ -434,8 +435,8 @@ const canonicalURL = new URL(Astro.url.pathname, Astro.site);
   }
 
   .cookie-banner-actions .btn {
-    padding: 0.6rem 1.25rem;
-    font-size: 0.9rem;
+    padding: 0.5rem 1.1rem;
+    font-size: 0.85rem;
   }
 
   @media (max-width: 640px) {
