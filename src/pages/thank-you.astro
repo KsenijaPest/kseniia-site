@@ -1,0 +1,26 @@
+---
+import Layout from '../layouts/Layout.astro';
+---
+
+<Layout
+  title="Thank You"
+  description="Thanks for reaching out. I'll follow up within 1-2 business days."
+>
+  <section>
+    <h1>Thanks, that's on its way</h1>
+    <p>
+      I've got your message and will follow up within 1-2 business days. If it's urgent,
+      feel free to book a call directly instead.
+    </p>
+    <div class="cta-buttons">
+      <a href="https://cal.com/kseniiashermin/15min" class="btn btn-primary" target="_blank" rel="noopener">Book a Call on Cal.com</a>
+      <a href="/" class="btn btn-secondary">Back to Home</a>
+    </div>
+  </section>
+
+  <script is:inline>
+    if (localStorage.getItem('cookie-consent') === 'accepted' && typeof window.gtag === 'function') {
+      window.gtag('event', 'form_submission');
+    }
+  </script>
+</Layout>

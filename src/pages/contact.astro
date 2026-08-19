@@ -14,6 +14,7 @@ import Layout from '../layouts/Layout.astro';
   <section id="contact-form">
     <form action="https://api.web3forms.com/submit" method="POST">
       <input type="hidden" name="access_key" value="067d94ff-2b9f-4d41-9199-09d942719de8" />
+      <input type="hidden" name="redirect" value="https://kseniiashermin.com/thank-you" />
 
       <label for="name">Name</label>
       <input type="text" id="name" name="name" required />
@@ -44,7 +45,7 @@ import Layout from '../layouts/Layout.astro';
     </form>
   </section>
 
-  <script>
+  <script is:inline>
     const params = new URLSearchParams(window.location.search);
     const interest = params.get('interest');
     const select = document.getElementById('interest');
