@@ -15,7 +15,7 @@ const ogImageURL = new URL('/og-image.png', Astro.site);
 <html lang="en">
   <head>
     <meta charset="UTF-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, viewport-fit=cover" />
     <link rel="icon" type="image/svg+xml" href="/favicon.svg" />
     <link rel="canonical" href={canonicalURL} />
     <title>{title} | Kseniia Shermin</title>
@@ -414,7 +414,7 @@ const ogImageURL = new URL('/og-image.png', Astro.site);
     background: var(--color-bg);
     border-top: 1px solid var(--color-line);
     box-shadow: 0 -4px 20px rgba(20, 22, 31, 0.08);
-    padding: 0.85rem 2rem;
+    padding: 0.85rem 2rem calc(0.85rem + env(safe-area-inset-bottom, 0px));
     display: flex;
     align-items: center;
     justify-content: space-between;
