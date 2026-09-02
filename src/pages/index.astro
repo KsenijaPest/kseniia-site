@@ -1,6 +1,17 @@
 ---
 import Layout from '../layouts/Layout.astro';
 
+const industries = [
+  "Health Insurance (ACA)",
+  "Health Insurance (U65)",
+  "Medicare (O65)",
+  "Life & Final Expense Insurance",
+  "Auto & Home Insurance",
+  "Mental Health & Behavioral Health Treatment",
+  "Telecom & Internet Service Providers",
+  "E-commerce (Home Appliances & Consumer Goods)"
+];
+
 const personSchema = {
   "@context": "https://schema.org",
   "@type": "Person",
@@ -10,6 +21,10 @@ const personSchema = {
   "url": "https://kseniiashermin.com",
   "sameAs": [
     "https://www.linkedin.com/in/kseniiashermin/"
+  ],
+  "knowsAbout": [
+    "Google Ads", "Microsoft Ads", "Meta Ads", "Paid Search", "PPC", "SEM",
+    ...industries
   ]
 };
 
@@ -91,6 +106,19 @@ const professionalServiceSchema = {
     <p class="platforms-also"><strong>Also experienced with:</strong> Meta Ads, LinkedIn Ads, and other PPC platforms depending on where the audience actually is.</p>
   </section>
 
+  <section class="industries" id="industries">
+    <h2>Industries</h2>
+    <p>
+      I've run paid search and lead generation campaigns across health insurance (ACA, U65,
+      and Medicare O65), life and final expense insurance, auto and home insurance, mental
+      health and behavioral health treatment, telecom and internet service providers, and
+      e-commerce, including home appliances and consumer goods.
+    </p>
+    <ul class="industry-tags">
+      {industries.map((industry) => <li>{industry}</li>)}
+    </ul>
+  </section>
+
   <section class="split">
     <h2>How can I help you?</h2>
     <div class="split-cards">
@@ -157,6 +185,23 @@ const professionalServiceSchema = {
   .hero-actions .btn { min-width: 190px; }
 
   .hero .stats-row { justify-content: center; }
+
+  .industry-tags {
+    list-style: none;
+    margin: 1.5rem 0 0;
+    padding: 0;
+    display: flex;
+    flex-wrap: wrap;
+    gap: 0.6rem;
+  }
+  .industry-tags li {
+    background: var(--color-accent-light);
+    color: var(--color-accent);
+    border-radius: 999px;
+    padding: 0.4rem 1rem;
+    font-size: 0.9rem;
+    font-weight: 600;
+  }
 
   @media (max-width: 640px) {
     .hero-actions { flex-direction: column; align-items: stretch; }
