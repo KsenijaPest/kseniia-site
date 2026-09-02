@@ -16,14 +16,18 @@ const testimonials = [
     name: "Rodolfo Marrero",
     title: "CTO & Co-Founder at Excel Impact, LLC",
     context: "LinkedIn recommendation, November 2024",
-    screenshot: "/testimonials/rodolfo-marrero.png"
+    screenshot: "/testimonials/rodolfo-marrero.png",
+    screenshotWidth: 1554,
+    screenshotHeight: 352
   },
   {
     quote: "I had the chance to work with Sienna on several projects in the behavioral healthcare space. She has strong experience with Paid Search, lead generation, and campaign management across Google and Bing Ads, including large daily budgets over $100K. What I liked about working with her was that she always focused not just on traffic, but on lead quality and overall business goals. She understands healthcare marketing well, works great with the team, and is very organized and professional in her work. Sienna is very experienced in PPC and digital marketing, and I'd definitely recommend her to any company looking for a strong paid search specialist.",
     name: "Georgii Liapko",
     title: "Senior SEO & Digital Marketing Manager",
     context: "LinkedIn recommendation, May 2026",
-    screenshot: "/testimonials/georgii-liapko.png"
+    screenshot: "/testimonials/georgii-liapko.png",
+    screenshotWidth: 1562,
+    screenshotHeight: 542
   },
   {
     quote: "Meeting Kseniia was a great pleasure. She's extremely knowledgeable about PPC, both on Google and Bing, something many people claim to know, but few actually possess. I highly recommend her for any project, especially if it involves insurance.",
@@ -141,7 +145,7 @@ const testimonials = [
       {testimonials.map((t) => (
         <div class:list={["split-card", "testimonial-card", { "testimonial-card-screenshot": t.screenshot }]}>
           {t.screenshot ? (
-            <img src={t.screenshot} alt="LinkedIn recommendation screenshot" loading="lazy" />
+            <img src={t.screenshot} alt="LinkedIn recommendation screenshot" width={t.screenshotWidth} height={t.screenshotHeight} loading="lazy" />
           ) : (
             <>
               {t.rating && (
