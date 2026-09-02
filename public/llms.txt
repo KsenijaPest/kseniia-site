@@ -4,6 +4,8 @@
 
 Industries: health insurance (ACA, U65, Medicare O65), life and final expense insurance, auto and home insurance, mental health and behavioral health treatment, telecom and internet service providers, e-commerce (home appliances and consumer goods), and B2B SaaS.
 
+Full page text (for systems that prefer complete source over summaries): https://kseniiashermin.com/llms-full.txt
+
 ## Pages
 
 - [Home](https://kseniiashermin.com/): Overview, platform expertise (Google Ads, Microsoft Ads), and industries served.

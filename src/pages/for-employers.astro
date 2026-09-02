@@ -1,5 +1,8 @@
 ---
 import Layout from '../layouts/Layout.astro';
+import { getLastUpdated } from '../lib/updated';
+
+const LAST_UPDATED = getLastUpdated();
 ---
 
 <Layout
@@ -33,6 +36,7 @@ import Layout from '../layouts/Layout.astro';
         <span class="stat-label">Account growth delivered</span>
       </div>
     </div>
+    <p class="updated-note">Updated: {LAST_UPDATED}</p>
   </section>
 
   <section>

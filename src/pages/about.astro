@@ -1,5 +1,10 @@
 ---
 import Layout from '../layouts/Layout.astro';
+import { Image } from 'astro:assets';
+import { getLastUpdated } from '../lib/updated';
+import aboutPhoto from '../assets/kseniia-shermin.jpg';
+
+const LAST_UPDATED = getLastUpdated();
 
 const schema = {
   "@context": "https://schema.org",
@@ -63,7 +68,7 @@ const testimonials = [
   schema={schema}
 >
   <section class="about-intro">
-    <img class="about-photo" src="/kseniia-shermin.jpg" alt="Kseniia Shermin" width="180" height="180" />
+    <Image class="about-photo" src={aboutPhoto} width={360} height={360} format="webp" quality={80} alt="Kseniia Shermin" />
     <h1>About Me</h1>
     <p>
       I'm a Performance Marketing Manager with 10+ years of experience in paid search
@@ -79,6 +84,7 @@ const testimonials = [
     </p>
 
     <!-- TODO: add Google Ads / Microsoft Advertising certifications here as trust badges -->
+    <p class="updated-note">Updated: {LAST_UPDATED}</p>
   </section>
 
   <section class="career-history">

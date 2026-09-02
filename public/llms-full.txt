@@ -1,0 +1,215 @@
+# Kseniia Shermin — Full Site Content
+
+> Performance Marketing Manager with 10+ years of hands-on paid search experience. Manages Google Ads and Microsoft Ads accounts spending over $100,000/day, plus Meta Ads and LinkedIn Ads. Focused on lead generation for B2C, B2B, and service businesses.
+
+This file contains the full text of every page on kseniiashermin.com, for AI systems that want complete source text rather than a summary. For a short overview and page index, see /llms.txt.
+
+---
+
+## Home — https://kseniiashermin.com/
+
+# Performance Marketing Manager for Lead Gen at Scale
+
+10+ years running paid search and paid social for B2C, B2B, and service businesses. Managing Google Ads and Microsoft Ads accounts spending over $100,000 per day, plus Meta Ads, LinkedIn Ads, and virtually any pay-per-click platform.
+
+Stats: 10+ years of experience. $100K+ daily ad spend managed. 5X-36X account growth delivered.
+
+## Deep Platform Expertise
+
+Paid search is where I live. Over 10 years running Google Ads and Microsoft Ads accounts at scale means knowing the auction mechanics, the bid strategy tradeoffs, and the reporting quirks well enough to know when to trust the platform's automation and when to override it.
+
+### Google Ads
+Search, Display, Performance Max, Shopping, and YouTube. Comfortable building account structures for scale, tuning Smart Bidding strategies, and getting conversion tracking right before touching anything else.
+
+### Microsoft Ads
+Microsoft Ads is not just an import job from Google Ads. It's a genuinely different platform with its own auction dynamics and audience network, and it rewards a different approach. Years of hands-on Microsoft Ads campaign management have consistently delivered strong traffic, lead quality, and ROI.
+
+Also experienced with: Meta Ads, LinkedIn Ads, and other PPC platforms depending on where the audience actually is.
+
+## Industries
+
+I've run paid search and lead generation campaigns across health insurance (ACA, U65, and Medicare O65), life and final expense insurance, auto and home insurance, mental health and behavioral health treatment, telecom and internet service providers, e-commerce, including home appliances and consumer goods, and B2B SaaS.
+
+## How can I help you?
+
+**Looking to hire a Performance Marketing Manager:** 10+ years of in-house and agency-side experience managing large-scale lead gen accounts. See background and career results at /for-employers.
+
+**Need an audit, consultation, or account management:** A clear-eyed look at what's working and what isn't in your Google, Microsoft, or Meta Ads account, or ongoing management. See /services.
+
+## How I Work
+
+**Start with the goal, not the tactic.** I focus on the number that actually matters, usually lowering cost per action and scaling conversion volume at the same time, not one at the expense of the other.
+
+**Fix the foundation first.** Before touching bids or creative, I make sure tracking and data are accurate. Every scaling decision after that is only as good as the data it's built on.
+
+**Then experiment relentlessly.** Once the foundation is solid, I test across every layer of the account, including bidding strategy, audience signals, ad copy, and landing pages, to find what actually moves the number.
+
+---
+
+## Case Studies — https://kseniiashermin.com/case-studies/
+
+# Paid Search & PPC Case Studies
+
+Case studies drawn from real accounts I've managed. Screenshots are watermarked; client names shown only where permitted.
+
+### Health Insurance — iHealthQuotes.com
+**Context:** As Director of Marketing at P7 Ventures, led multi-channel paid search strategy for this health insurance brand across all business units.
+**Platforms:** Google Ads, Microsoft Ads, other PPC platforms, vendors
+**What I did:**
+- Led multi-channel paid search strategy, managing vendors and hitting aggressive CPA and volume targets
+- Optimized the Google Ads account and launched Microsoft Ads and other PPC platforms to diversify and scale acquisition
+- Architected automated data pipelines for real-time ROI tracking and full performance transparency
+**Result:** Scaled the whole lead gen program 5X in 2 years, helping the brand reach #24 on the Inc. 5000 list in 2025. Source: https://www.inc.com/profile/ihealthquotes
+
+### Mental Health — Riverhouse Wellness (riverhousewellness.com)
+**Context:** Built the entire performance marketing infrastructure for a new mental health and substance use disorder treatment brand from scratch, as part of P7 Ventures' behavioral health business unit.
+**Platforms:** Google Ads, Microsoft Ads, vendors, and specialized platforms such as recovery.com
+**What I did:**
+- Built the entire performance marketing infrastructure, conversion tracking, and data pipelines from scratch for a new brand launch, using CallTrackingMetrics, Salesforce, and n8n
+**Result:** Reached operational scale within 90 days.
+
+### Insurance Lead Gen at Scale (Multi-Vertical)
+**Context:** As Head of PPC managing insurance lead and call generation across six verticals: Medicare (O65), health (ACA and U65), life, final expense, auto, and home.
+**Budget scale:** $100,000+/day
+**Platforms:** Google Ads (Search, Display, Discovery, YouTube), Bing Ads, Facebook Ads, and dozens of specialized PPC platforms
+**What I did:**
+- Built and managed PPC campaigns across Google Ads, Bing Ads, and Facebook Ads for six insurance verticals simultaneously
+- Conducted in-depth data analysis using Tableau, QlikView, Google Analytics, and Power BI
+- Ran A/B and split tests to identify and act on growth opportunities
+- Recruited, trained, and managed a team of PPC specialists
+**Result:** Consistently hit KPI and daily budget targets across all six verticals, and scaled the health insurance vertical by 25X.
+
+### E-commerce (Home Appliances) — E-techno
+**Context:** Managed paid search for a large e-commerce catalog spanning 30,000+ items in home appliances, plus a wide range of consumer product categories including electronics, home goods, outdoor, personal care, and apparel.
+**Platforms:** Paid Search
+**What I did:**
+- Optimized paid search accounts
+- Built a Power BI analytics system from scratch, including the data model and reports used for marketing and management decisions
+**Result:** Grew monthly orders by 36x and reduced cost per order by 2.5x.
+
+---
+
+## Work With Me (Services) — https://kseniiashermin.com/services/
+
+# Work With Me
+
+Lead generation focused paid search and paid social, for B2C, B2B, and service businesses.
+
+## Audit
+A full review of account structure, tracking accuracy, budget allocation, and bidding strategy across Google Ads and/or Microsoft Ads, with a prioritized list of what to fix first.
+
+## Consultation
+A focused strategy session. Bring your specific questions or roadblocks, leave with a concrete plan.
+
+## Account Management
+Ongoing, hands-on management of your Google Ads, Microsoft Ads, and/or Meta Ads accounts, built around a predictable lead pipeline.
+
+## FAQ
+
+**What's included in a paid search audit?**
+A full review of account structure, tracking accuracy, budget allocation, and bidding strategy across Google Ads and/or Microsoft Ads, with a prioritized list of what to fix first.
+
+**Do you work with e-commerce accounts?**
+Yes, I have experience with large appliance e-commerce (30,000+ items) and I've worked across a wide range of consumer product categories, from electronics and home goods to outdoor, personal care, and apparel.
+
+**Which platforms do you work with?**
+Google Ads, Microsoft Ads, Meta Ads, LinkedIn Ads, and other PPC platforms depending on where your audience is.
+
+**Which industries have you worked in?**
+Health insurance (ACA, U65, and Medicare O65), life and final expense insurance, auto and home insurance, mental health and behavioral health treatment, telecom and internet service providers, e-commerce, including home appliances and consumer goods, and B2B SaaS.
+
+**Do you sign NDAs?**
+Yes, if needed.
+
+---
+
+## For Employers — https://kseniiashermin.com/for-employers/
+
+# Looking to Hire a Performance Marketing Manager
+
+10+ years running paid search and paid social, including Google Ads, Microsoft Ads, Meta Ads, and LinkedIn Ads, with hands-on experience managing accounts spending over $100,000 per day. Focused on lead generation for B2C, B2B, and service businesses.
+
+Stats: 10+ years of experience. $100K+ daily ad spend managed. 5X-36X account growth delivered.
+
+## What I Bring
+
+**Scale:** Direct experience managing large, complex accounts across multiple platforms simultaneously.
+
+**Process, not just execution:** I build repeatable tracking, testing, and reporting systems, not one-off campaign wins.
+
+**Range across industries:** Health insurance (ACA, U65, Medicare O65), life and final expense, auto and home insurance, mental health treatment, telecom, e-commerce, and B2B SaaS.
+
+**Team leadership:** Recruited, trained, and managed teams of PPC specialists, not just individual-contributor campaign work.
+
+## Want the Details?
+Full account history and results are on the case studies page (/case-studies), and the complete career timeline is on the about page (/about).
+
+---
+
+## About — https://kseniiashermin.com/about/
+
+# About Me
+
+I'm a Performance Marketing Manager with 10+ years of experience in paid search and paid social. I manage large-scale Google Ads and Microsoft Ads accounts, spending over $100,000 per day, alongside Meta Ads, LinkedIn Ads, and other PPC platforms, working with any bidding logic or campaign structure the account requires. My focus is lead generation: turning "we just need more leads" into a predictable, forecastable pipeline.
+
+I'm AI-native: I build AI agents that help manage accounts, automate data pipelines, and speed up analytics and reporting.
+
+## Career History
+
+**Director of Marketing, P7 Ventures** (May 2024 to July 2026, Remote)
+- Led multi-channel paid search strategy across all business units, managing vendors and hitting aggressive CPA and volume targets
+- Architected automated data pipelines using n8n for real-time ROI tracking and full performance transparency
+
+**Founder & PPC Consultant, Smart PPC** (May 2023 to May 2024)
+- Ran an independent PPC consultancy: audits, strategic consulting, and new account builds for businesses and digital agencies
+- Partnered with multiple digital agencies as a senior PPC specialist, managing key client accounts and leading campaign teams
+
+**Head of PPC / Senior PPC Strategist / PPC Specialist, Excel™** (April 2018 to June 2022)
+- Built and managed PPC campaigns across Google Ads, Bing Ads, and Meta Ads, managing daily budgets of $100,000+
+- Recruited, trained, and managed a team of PPC specialists
+
+**PPC Specialist, Lead Box** (June 2015 to April 2018)
+- Grew monthly orders 36x and reduced cost per order 2.5x
+- Built a Power BI analytics system from scratch, including the data model and reporting used for marketing and management decisions
+
+## How I Work
+
+**Start with the goal, not the tactic.** I focus on the number that actually matters, usually lowering cost per action and scaling conversion volume at the same time, not one at the expense of the other.
+
+**Fix the foundation first.** Before touching bids or creative, I make sure tracking and data are accurate. Every scaling decision after that is only as good as the data it's built on.
+
+**Then experiment relentlessly.** Once the foundation is solid, I test across every layer of the account, including bidding strategy, audience signals, ad copy, and landing pages, to find what actually moves the number.
+
+## What Clients & Colleagues Say
+
+"Sienna is a terrific SEM manager! She is extremely knowledgeable about all things Google Ads and she knows how to deliver results. During the high seasons in our business, Sienna always showed up ready to deliver value, regardless of how long the hours were. Thank you Sienna for all the support and hard work!!!" — Rodolfo Marrero, CTO & Co-Founder at Excel Impact, LLC (LinkedIn recommendation, November 2024)
+
+"I had the chance to work with Sienna on several projects in the behavioral healthcare space. She has strong experience with Paid Search, lead generation, and campaign management across Google and Bing Ads, including large daily budgets over $100K. What I liked about working with her was that she always focused not just on traffic, but on lead quality and overall business goals. She understands healthcare marketing well, works great with the team, and is very organized and professional in her work. Sienna is very experienced in PPC and digital marketing, and I'd definitely recommend her to any company looking for a strong paid search specialist." — Georgii Liapko, Senior SEO & Digital Marketing Manager (LinkedIn recommendation, May 2026)
+
+"Meeting Kseniia was a great pleasure. She's extremely knowledgeable about PPC, both on Google and Bing, something many people claim to know, but few actually possess. I highly recommend her for any project, especially if it involves insurance." (30 minute consultation, 5 stars)
+
+"Kseniia did several PPC audits for us and she was insightful, succinct and technically very proficient. I wouldn't have any hesitation working with her again." (PPC expert for ongoing agency work, large ad spend management, 5 stars)
+
+"Great media buyer and communicator. Highly recommend." (Paid search, call only focus, 5 stars)
+
+"Great to work with, very accommodating and knowledgeable; would definitely work with again." (YouTube Ads setup, 5 stars)
+
+"Ksenilia is an excellent communicator, and she innovates in the creation of ads and selection of keywords, etc. She is constantly seeking to improve and she does a GREAT job. We love her A+++++" (Google Ads search campaigns setup, 5 stars)
+
+---
+
+## Contact — https://kseniiashermin.com/contact/
+
+# Let's Talk
+
+Tell me a bit about your account and what you're looking for, and I'll follow up within 1-2 business days.
+
+Contact form fields: name, email, approximate monthly ad spend (Under $10,000 / $10,000-$50,000 / $50,000-$200,000 / $200,000+), what you're looking for (Audit / Consultation / Ongoing management / Full-time or fractional role), and a free-text message.
+
+Prefer to book directly: https://cal.com/kseniiashermin/15min
+
+---
+
+## Privacy Policy — https://kseniiashermin.com/privacy-policy/
+
+This site collects contact-form submissions (name, email, budget range, interest, message) via Web3Forms, used only to respond to inquiries. Analytics (Google Analytics 4, Microsoft Clarity) load only after cookie-banner consent. Cloudflare Web Analytics is cookie-free. No data is sold or shared beyond what's needed to deliver a form submission. Full policy at /privacy-policy.

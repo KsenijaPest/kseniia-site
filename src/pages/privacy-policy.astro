@@ -1,0 +1,85 @@
+---
+import Layout from '../layouts/Layout.astro';
+import { getLastUpdated } from '../lib/updated';
+
+const LAST_UPDATED = getLastUpdated();
+---
+
+<Layout
+  title="Privacy Policy"
+  description="What information this site collects, why, and how to request it be removed."
+>
+  <section>
+    <h1>Privacy Policy</h1>
+    <p class="updated-note">Updated: {LAST_UPDATED}</p>
+    <p>
+      This page explains what information kseniiashermin.com collects, why, and how you
+      can ask me to change or delete it. This is a personal site run by one person
+      (Kseniia Shermin), not a company with a dedicated legal or privacy team, so this
+      policy is written in plain language rather than formal legal terms.
+    </p>
+  </section>
+
+  <section>
+    <h2>What this site collects</h2>
+    <h3>The contact form</h3>
+    <p>
+      If you fill out the form on the <a href="/contact">Contact page</a>, it collects
+      your name, email address, approximate ad spend range, what you're looking for, and
+      whatever you write in the message field. That submission is processed by
+      Web3Forms (a third-party form service) and delivered to me by email. I use it only
+      to reply to your inquiry. I don't add you to a mailing list, sell it, or share it
+      with anyone else.
+    </p>
+    <h3>Booking a call</h3>
+    <p>
+      The "Book a Call" link goes to Cal.com, a third-party scheduling tool. Anything you
+      enter there (name, email, meeting time) is handled under
+      <a href="https://cal.com/privacy" target="_blank" rel="noopener">Cal.com's own privacy policy</a>,
+      not this one.
+    </p>
+    <h3>Analytics</h3>
+    <p>
+      This site uses Google Analytics 4 and Microsoft Clarity to understand traffic and
+      how visitors use the site. Both use cookies and only load after you accept the
+      cookie banner. If you decline or don't respond, neither loads, and no analytics
+      cookies are set. It may also use Cloudflare Web Analytics, which is cookie-free and
+      doesn't require consent.
+    </p>
+    <h3>Hosting</h3>
+    <p>
+      This site is served through Cloudflare. Like virtually all web hosts, Cloudflare's
+      infrastructure sees standard server-log data (IP address, browser type, request
+      timestamps) for every visitor, as a normal part of delivering the page. I don't
+      access this data individually; it exists at the infrastructure level.
+    </p>
+  </section>
+
+  <section>
+    <h2>What this site does not do</h2>
+    <ul>
+      <li>Doesn't sell or rent your information to anyone.</li>
+      <li>Doesn't share contact-form submissions with third parties beyond the services listed above (Web3Forms, to deliver the message to me).</li>
+      <li>Doesn't run retargeting or ad-tracking pixels.</li>
+    </ul>
+  </section>
+
+  <section>
+    <h2>Your rights</h2>
+    <p>
+      You can ask me at any time to tell you what information I have about you, correct
+      it, or delete it. The fastest way to reach me is through the
+      <a href="/contact">Contact form</a> or a message on
+      <a href="https://www.linkedin.com/in/kseniiashermin/" target="_blank" rel="noopener">LinkedIn</a>.
+      I'll respond within a reasonable time.
+    </p>
+  </section>
+
+  <section>
+    <h2>Changes to this policy</h2>
+    <p>
+      If what this site collects or how it's used changes, this page will be updated to
+      reflect that. The date at the top shows the last update.
+    </p>
+  </section>
+</Layout>

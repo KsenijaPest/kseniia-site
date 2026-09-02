@@ -1,0 +1,28 @@
+name: Monthly rebuild
+
+# This site is statically built, so the "Updated: [Month Year]" text on Home, About,
+# For Employers, Case Studies, and Services (computed by src/lib/updated.ts) only
+# changes on the next build. This workflow triggers a fresh Cloudflare Pages build
+# on the 1st of every month at 06:00 UTC, so those dates roll forward automatically
+# without anyone needing to push a commit or redeploy by hand.
+#
+# One-time setup required (see README/DEPLOY.md for details):
+#   1. In the Cloudflare dashboard: Workers & Pages -> this Pages project -> Settings
+#      -> Builds & deployments -> Deploy hooks -> Create hook (name it e.g.
+#      "monthly-refresh", branch: main). Copy the generated URL.
+#   2. In this GitHub repo: Settings -> Secrets and variables -> Actions -> New
+#      repository secret, name it CLOUDFLARE_DEPLOY_HOOK_URL, and paste that URL.
+# Until that secret exists, this workflow will fail (harmlessly) rather than do nothing.
+
+on:
+  schedule:
+    - cron: '0 6 1 * *'
+  workflow_dispatch: {}
+
+jobs:
+  trigger-rebuild:
+    runs-on: ubuntu-latest
+    steps:
+      - name: Trigger Cloudflare Pages deploy hook
+        run: |
+          curl -sf -X POST "${{ secrets.CLOUDFLARE_DEPLOY_HOOK_URL }}"

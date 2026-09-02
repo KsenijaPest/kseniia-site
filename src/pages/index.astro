@@ -1,5 +1,10 @@
 ---
 import Layout from '../layouts/Layout.astro';
+import { Image } from 'astro:assets';
+import { getLastUpdated } from '../lib/updated';
+import heroPhoto from '../assets/kseniia-shermin.jpg';
+
+const LAST_UPDATED = getLastUpdated();
 
 const industries = [
   "Health Insurance (ACA)",
@@ -45,7 +50,7 @@ const professionalServiceSchema = {
   schema={[personSchema, professionalServiceSchema]}
 >
   <section class="hero">
-    <img class="hero-photo" src="/kseniia-shermin.jpg" alt="Kseniia Shermin" width="140" height="140" />
+    <Image class="hero-photo" src={heroPhoto} width={360} height={360} format="webp" quality={80} alt="Kseniia Shermin" />
     <h1>Performance Marketing Manager for Lead Gen at Scale</h1>
     <div class="tldr">
       10+ years running paid search and paid social for B2C, B2B, and service businesses.
@@ -72,6 +77,7 @@ const professionalServiceSchema = {
         <span class="stat-label">Account growth delivered</span>
       </div>
     </div>
+    <p class="updated-note">Updated: {LAST_UPDATED}</p>
   </section>
 
   <section class="platforms">
