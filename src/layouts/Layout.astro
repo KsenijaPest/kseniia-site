@@ -109,6 +109,7 @@ const ogImageURL = new URL('/og-image.png', Astro.site);
       <p>&copy; {new Date().getFullYear()} Kseniia Shermin. Performance Marketing Manager.</p>
       <p class="footer-links">
         <a href="https://www.linkedin.com/in/kseniiashermin/" target="_blank" rel="noopener">Kseniia Shermin on LinkedIn</a>
+        <span class="footer-sep">&middot;</span>
         <a href="/privacy-policy">Privacy Policy</a>
       </p>
     </footer>
@@ -312,6 +313,7 @@ const ogImageURL = new URL('/og-image.png', Astro.site);
   }
 
   .footer-links a { color: var(--color-muted); }
+  .footer-sep { margin: 0 0.5rem; }
 
   section { margin-bottom: 4rem; }
 
