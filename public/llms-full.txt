@@ -89,6 +89,32 @@ Case studies drawn from real accounts I've managed. Screenshots are watermarked;
 
 ---
 
+## Blog — https://kseniiashermin.com/blog/
+
+Articles on paid search and PPC, written from hands-on account management. Full posts below.
+
+### Microsoft Ads vs Google Ads: Cost, Competition, and Bot Traffic (2026 Data) — https://kseniiashermin.com/blog/microsoft-ads-vs-google-ads/
+
+Published September 4, 2026.
+
+Microsoft Ads costs 25 to 40 percent less per click than Google Ads on average, mainly because far fewer advertisers bid there, and its cost per conversion runs about 31 percent lower across most industries. Google still converts at a higher rate overall and dominates on raw search volume. Neither platform wins outright: Microsoft wins on efficiency, Google wins on scale, and the platform with less competition also carries a traffic-quality risk that Google advertisers rarely have to think about.
+
+**2026 benchmarks:** Google Ads averages $2.85-$5.26 CPC with ~80% of US advertisers running it and an ~8.18% cross-industry conversion rate. Microsoft Ads averages $1.50-$2.80 CPC (25-40% lower, wider in B2B and legal) with ~36% of US advertisers running it and a ~3.5% cross-industry conversion rate, though top verticals (careers, finance, real estate) reach 5-7%. Microsoft's cost per conversion runs about 31% lower than Google's on average. Google Ads' per-campaign IP exclusion limit is 500; Microsoft Ads' is 100, campaign level only.
+
+**Why Microsoft is cheaper:** fewer advertisers bidding means a thinner, less competitive auction, not a smarter algorithm.
+
+**The catch:** an estimated 8.51% of all paid ad traffic industry-wide is invalid in 2026, reaching up to 40% in high-cost verticals like finance, insurance, legal, and home services. Microsoft doesn't publish its own invalid-traffic rate, but its smaller advertiser base means bad placements get flagged more slowly than on Google, and the Syndicated Search Partners network is a common source of high-click, low-conversion traffic.
+
+**How to keep a Microsoft Ads account clean:** pull the Website URL (Publisher) report weekly, maintain a shared negative site list at the manager account level, review search terms weekly, and test restricting delivery to Bing and Yahoo (owned and operated) only versus the default syndicated network.
+
+**Real account example:** in one national US services account, Google Ads averages $9.20 CPC at 5.5% conversion (~$167 cost per conversion) versus Microsoft Ads at $2.64 CPC and 2.21% conversion (~$119 cost per conversion, about 29% lower than Google despite converting at less than half the rate).
+
+FAQ covers: whether Microsoft Ads is cheaper than Google Ads, whether it converts as well, whether its cost per conversion is lower, whether it has a bot traffic problem, how often to update the negative site list, and whether every advertiser should run both platforms.
+
+Full article, benchmark table, and sources at the URL above.
+
+---
+
 ## Work With Me (Services) — https://kseniiashermin.com/services/
 
 # Work With Me

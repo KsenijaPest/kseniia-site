@@ -10,6 +10,8 @@ Full page text (for systems that prefer complete source over summaries): https:/
 
 - [Home](https://kseniiashermin.com/): Overview, platform expertise (Google Ads, Microsoft Ads), and industries served.
 - [Case Studies](https://kseniiashermin.com/case-studies/): Real account results, including a 5X lead gen scale-up in health insurance, a 90-day launch for a mental health brand, a 25X vertical scale-up in insurance lead gen, and 36X order growth in e-commerce.
+- [Blog](https://kseniiashermin.com/blog/): Articles on paid search and PPC, written from hands-on account management.
+  - [Microsoft Ads vs Google Ads: Cost, Competition, and Bot Traffic (2026 Data)](https://kseniiashermin.com/blog/microsoft-ads-vs-google-ads/): CPC, conversion rate, and cost-per-conversion benchmarks for both platforms, plus the bot-traffic and invalid-click risk that comes with Microsoft Ads' thinner auction, from someone running both platforms on accounts spending over $100,000/day.
 - [Work With Me](https://kseniiashermin.com/services/): Audits, consultations, and ongoing account management for Google Ads, Microsoft Ads, and Meta Ads, plus FAQ on budget, e-commerce, platforms, and industries.
 - [For Employers](https://kseniiashermin.com/for-employers/): Background for hiring managers considering Kseniia for a full-time or fractional Performance Marketing Manager role.
 - [About](https://kseniiashermin.com/about/): Full career history and client testimonials.

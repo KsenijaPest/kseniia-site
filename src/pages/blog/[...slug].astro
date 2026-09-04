@@ -1,0 +1,88 @@
+---
+import Layout from '../../layouts/Layout.astro';
+import { getCollection, render } from 'astro:content';
+
+export async function getStaticPaths() {
+  const posts = await getCollection('blog', ({ data }) => !data.draft);
+  return posts.map((post) => ({
+    params: { slug: post.id },
+    props: { post },
+  }));
+}
+
+const { post } = Astro.props;
+const { Content } = await render(post);
+
+const dateFormatted = post.data.publishDate.toLocaleDateString('en-US', { month: 'long', day: 'numeric', year: 'numeric', timeZone: 'UTC' });
+const updatedFormatted = post.data.updatedDate
+  ? post.data.updatedDate.toLocaleDateString('en-US', { month: 'long', day: 'numeric', year: 'numeric', timeZone: 'UTC' })
+  : null;
+
+const articleSchema = {
+  "@context": "https://schema.org",
+  "@type": "BlogPosting",
+  "headline": post.data.title,
+  "description": post.data.description,
+  "datePublished": post.data.publishDate.toISOString(),
+  "dateModified": (post.data.updatedDate ?? post.data.publishDate).toISOString(),
+  "author": { "@type": "Person", "name": "Kseniia Shermin", "url": "https://kseniiashermin.com/about" },
+  "publisher": { "@type": "Person", "name": "Kseniia Shermin" },
+  "mainEntityOfPage": `https://kseniiashermin.com/blog/${post.id}/`
+};
+
+const faqSchema = post.data.faq.length > 0 ? {
+  "@context": "https://schema.org",
+  "@type": "FAQPage",
+  "mainEntity": post.data.faq.map((item) => ({
+    "@type": "Question",
+    "name": item.q,
+    "acceptedAnswer": { "@type": "Answer", "text": item.a }
+  }))
+} : null;
+
+const schema = faqSchema ? [articleSchema, faqSchema] : [articleSchema];
+---
+
+<Layout title={post.data.title} description={post.data.description} schema={schema}>
+  <article class="post">
+    <p class="post-date">
+      Published {dateFormatted}{updatedFormatted && ` · Updated ${updatedFormatted}`}
+    </p>
+    <h1>{post.data.title}</h1>
+
+    <div class="post-body">
+      <Content />
+    </div>
+
+    {post.data.faq.length > 0 && (
+      <section class="post-faq">
+        <h2>FAQ</h2>
+        {post.data.faq.map((item) => (
+          <div class="faq-item">
+            <h3>{item.q}</h3>
+            <p>{item.a}</p>
+          </div>
+        ))}
+      </section>
+    )}
+
+    <p class="post-back"><a href="/blog">&larr; Back to Blog</a></p>
+  </article>
+</Layout>
+
+<style>
+  .post { max-width: 720px; margin: 0 auto; }
+  .post-date { color: var(--color-muted); font-size: 0.9rem; margin-bottom: 0.5rem; }
+  .post-body :global(h2) { margin-top: 2.5rem; }
+  .post-body :global(h3) { font-family: var(--font-sans); font-size: 1.1rem; }
+  .post-body :global(p) { margin: 0 0 1.25rem; }
+  .post-body :global(img) { width: 100%; height: auto; border-radius: 12px; box-shadow: 0 4px 20px rgba(20, 22, 31, 0.1); margin: 1.5rem 0; }
+  .post-body :global(ul), .post-body :global(ol) { margin: 0 0 1.25rem; padding-left: 1.3rem; }
+  .post-body :global(li) { margin-bottom: 0.5rem; }
+  .post-body :global(table) { width: 100%; border-collapse: collapse; margin: 1.5rem 0; font-size: 0.9rem; }
+  .post-body :global(th), .post-body :global(td) { text-align: left; padding: 0.6rem 0.75rem; border-bottom: 1px solid var(--color-line); }
+  .post-body :global(th) { color: var(--color-muted); font-weight: 600; }
+  .post-body :global(a) { color: var(--color-accent); }
+  .post-faq { margin-top: 3rem; }
+  .post-back { margin-top: 3rem; }
+</style>

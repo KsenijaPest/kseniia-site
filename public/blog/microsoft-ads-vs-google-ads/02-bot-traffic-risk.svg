@@ -1,0 +1,65 @@
+<svg viewBox="0 0 900 500" xmlns="http://www.w3.org/2000/svg" font-family="Helvetica, Arial, sans-serif">
+  <defs>
+    <filter id="cardShadow2" x="-20%" y="-20%" width="140%" height="140%">
+      <feDropShadow dx="0" dy="4" stdDeviation="8" flood-color="#14161f" flood-opacity="0.12"/>
+    </filter>
+  </defs>
+
+  <rect x="0" y="0" width="900" height="500" fill="#ffffff"/>
+
+  <text x="450" y="46" text-anchor="middle" fill="#6b7280" font-size="15" letter-spacing="1.5" font-weight="600">THE TRADEOFF NOBODY MENTIONS</text>
+  <text x="450" y="82" text-anchor="middle" fill="#14161f" font-size="28" font-family="Georgia, 'Times New Roman', serif" font-weight="700">Cheaper Clicks, Closer Watch Needed</text>
+
+  <!-- Main stat card -->
+  <g filter="url(#cardShadow2)">
+    <rect x="60" y="120" width="380" height="300" rx="12" fill="#eaf1ff"/>
+  </g>
+
+  <!-- geometric icon: magnifying glass over a small node network -->
+  <g transform="translate(96,156)" stroke="#2563eb" fill="none" stroke-width="2.5">
+    <circle cx="10" cy="10" r="4" fill="#7ba7ff" stroke="none"/>
+    <circle cx="30" cy="6" r="4" fill="#7ba7ff" stroke="none"/>
+    <circle cx="22" cy="26" r="4" fill="#7ba7ff" stroke="none"/>
+    <line x1="10" y1="10" x2="30" y2="6"/>
+    <line x1="10" y1="10" x2="22" y2="26"/>
+    <line x1="30" y1="6" x2="22" y2="26"/>
+    <circle cx="21" cy="15" r="11"/>
+    <line x1="29" y1="23" x2="38" y2="32"/>
+  </g>
+
+  <text x="96" y="238" fill="#2563eb" font-size="56" font-family="Georgia, 'Times New Roman', serif" font-weight="700">8.51%</text>
+  <text x="96" y="264" fill="#14161f" font-size="15">of all paid search traffic is invalid,</text>
+  <text x="96" y="286" fill="#14161f" font-size="15">industry-wide, in 2026</text>
+
+  <line x1="96" y1="308" x2="404" y2="308" stroke="#e5e7eb" stroke-width="1"/>
+
+  <text x="96" y="342" fill="#14161f" font-size="15" font-weight="700">Up to 40%</text>
+  <text x="96" y="364" fill="#6b7280" font-size="13.5">in high-cost verticals like finance,</text>
+  <text x="96" y="384" fill="#6b7280" font-size="13.5">insurance, legal, and home services</text>
+
+  <!-- Right column: why Microsoft needs closer attention -->
+  <text x="480" y="150" fill="#14161f" font-size="17" font-weight="700">Why Microsoft needs closer attention</text>
+
+  <g transform="translate(480,178)">
+    <circle cx="6" cy="6" r="6" fill="#2563eb"/>
+    <text x="24" y="11" fill="#14161f" font-size="14" font-weight="700">Slower detection</text>
+    <text x="24" y="32" fill="#6b7280" font-size="13">Fewer advertisers watching means a bad</text>
+    <text x="24" y="50" fill="#6b7280" font-size="13">placement can run for weeks before flagged</text>
+  </g>
+
+  <g transform="translate(480,244)">
+    <circle cx="6" cy="6" r="6" fill="#2563eb"/>
+    <text x="24" y="11" fill="#14161f" font-size="14" font-weight="700">Syndicated Search Partners</text>
+    <text x="24" y="32" fill="#6b7280" font-size="13">The most common practitioner complaint:</text>
+    <text x="24" y="50" fill="#6b7280" font-size="13">high clicks, cheap CPCs, zero conversions</text>
+  </g>
+
+  <g transform="translate(480,310)">
+    <circle cx="6" cy="6" r="6" fill="#2563eb"/>
+    <text x="24" y="11" fill="#14161f" font-size="14" font-weight="700">100 vs 500 IP exclusions</text>
+    <text x="24" y="32" fill="#6b7280" font-size="13">Microsoft's limit is campaign-level only,</text>
+    <text x="24" y="50" fill="#6b7280" font-size="13">a fifth of Google's account-wide cap</text>
+  </g>
+
+  <text x="450" y="480" text-anchor="middle" fill="#6b7280" font-size="11">Sources: 2026 ad-fraud industry reporting (via MediaPost), Imperva 2026 Bad Bot Report, Microsoft Advertising API docs. kseniiashermin.com</text>
+</svg>
