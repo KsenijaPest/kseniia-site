@@ -20,20 +20,48 @@ faq:
 
 Microsoft Ads costs 25 to 40 percent less per click than Google Ads on average, mainly because far fewer advertisers bid there, and its cost per conversion runs about 31 percent lower across most industries. Google still converts at a higher rate overall and dominates on raw search volume. Neither platform wins outright. Microsoft wins on efficiency, Google wins on scale, and the platform with less competition also carries a traffic-quality risk that Google advertisers rarely have to think about.
 
-I run Google Ads and Microsoft Ads side by side, on accounts spending over $100,000 a day, and I've watched this tradeoff play out in real accounts for over ten years. Here is what the 2026 benchmark data shows, what running both platforms for a decade has actually taught me, and where the cheaper platform starts costing you more than it saves.
+I've managed millions of dollars in Google Ads and Microsoft Ads budgets side by side, and I've watched this tradeoff play out in real accounts for over ten years. Here is what the 2026 benchmark data shows, what running both platforms for a decade has actually taught me, and where the cheaper platform starts costing you more than it saves.
 
 ## Quick Comparison (2026 Benchmarks)
 
-| | Google Ads | Microsoft Ads |
-|---|---|---|
-| Average CPC | ~$2.85 to $5.26 | ~$1.50 to $2.80 |
-| CPC gap vs the other platform | Baseline | 25-40% lower, sometimes wider in B2B and legal |
-| Share of advertisers running the platform (US, est.) | ~80% | ~36% |
-| Average conversion rate | ~8.18% cross-industry | ~3.5% cross-industry, but top verticals (careers, finance, real estate) reach 5-7% |
-| Average cost per conversion | Baseline | ~31% lower across most industries |
-| Global search market share | ~90% | Remainder, but reaches 700M+ monthly users through Bing, Yahoo, AOL, DuckDuckGo, MSN, Outlook, and Copilot |
-| Audience skew | Broad, mobile-heavy | Older, higher income, desktop-heavy |
-| Per-campaign IP exclusion limit | 500 | 100, campaign level only |
+<div class="compare-cards">
+  <div class="compare-card">
+    <div class="compare-card-header">
+      <svg viewBox="0 0 48 48" width="28" height="28" role="img" aria-label="Google Ads">
+        <path fill="#4285F4" d="M24 9.5c3.4 0 6.4 1.2 8.8 3.5l6.6-6.6C35.5 2.6 30.1 0 24 0 14.6 0 6.5 5.4 2.6 13.2l7.7 6c1.8-5.5 7-9.7 13.7-9.7Z"/>
+        <path fill="#34A853" d="M46.5 24.5c0-1.6-.1-3.2-.4-4.7H24v9h12.6c-.5 3-2.2 5.5-4.7 7.2l7.3 5.7c4.3-4 6.8-9.9 6.8-17.2Z"/>
+        <path fill="#FBBC05" d="M10.3 28.5a14.5 14.5 0 0 1 0-9l-7.7-6a24 24 0 0 0 0 21l7.7-6Z"/>
+        <path fill="#EA4335" d="M24 48c6.1 0 11.3-2 15-5.5l-7.3-5.7c-2 1.4-4.7 2.2-7.7 2.2-6.6 0-12.2-4.5-14.2-10.5l-7.7 6C6.5 42.6 14.6 48 24 48Z"/>
+      </svg>
+      <h3>Google Ads</h3>
+    </div>
+    <div class="compare-row"><span class="compare-label">Average CPC</span><span class="compare-value">$2.85 to $5.26</span></div>
+    <div class="compare-row"><span class="compare-label">Advertiser share (US, est.)</span><span class="compare-value">~80%</span></div>
+    <div class="compare-row"><span class="compare-label">Average conversion rate</span><span class="compare-value">~8.18% cross-industry</span></div>
+    <div class="compare-row"><span class="compare-label">Cost per conversion</span><span class="compare-value">Baseline</span></div>
+    <div class="compare-row"><span class="compare-label">Search market share</span><span class="compare-value">~90%</span></div>
+    <div class="compare-row"><span class="compare-label">Audience skew</span><span class="compare-value">Broad, mobile-heavy</span></div>
+    <div class="compare-row"><span class="compare-label">IP exclusions per campaign</span><span class="compare-value">500</span></div>
+  </div>
+  <div class="compare-card">
+    <div class="compare-card-header">
+      <svg viewBox="0 0 24 24" width="24" height="24" role="img" aria-label="Microsoft Ads">
+        <rect x="1" y="1" width="10" height="10" fill="#F25022"/>
+        <rect x="13" y="1" width="10" height="10" fill="#7FBA00"/>
+        <rect x="1" y="13" width="10" height="10" fill="#00A4EF"/>
+        <rect x="13" y="13" width="10" height="10" fill="#FFB900"/>
+      </svg>
+      <h3>Microsoft Ads</h3>
+    </div>
+    <div class="compare-row"><span class="compare-label">Average CPC</span><span class="compare-value compare-highlight">$1.50 to $2.80</span></div>
+    <div class="compare-row"><span class="compare-label">Advertiser share (US, est.)</span><span class="compare-value compare-highlight">~36%</span></div>
+    <div class="compare-row"><span class="compare-label">Average conversion rate</span><span class="compare-value">~3.5% cross-industry (5-7% in top verticals)</span></div>
+    <div class="compare-row"><span class="compare-label">Cost per conversion</span><span class="compare-value compare-highlight">~31% lower</span></div>
+    <div class="compare-row"><span class="compare-label">Search market share</span><span class="compare-value">Remainder, 700M+ monthly reach via Bing, Yahoo, AOL, DuckDuckGo, MSN, Outlook, Copilot</span></div>
+    <div class="compare-row"><span class="compare-label">Audience skew</span><span class="compare-value">Older, higher income, desktop-heavy</span></div>
+    <div class="compare-row"><span class="compare-label">IP exclusions per campaign</span><span class="compare-value">100, campaign level only</span></div>
+  </div>
+</div>
 
 Numbers above are blended from multiple 2026 industry benchmark reports (WordStream, BrightBid, Lionheart, NaMedia Experts, Whatagraph, Improvado). Treat them as directional, not exact. Your own account data will vary by industry and competitiveness, and the advertiser-participation figure in particular is an industry estimate rather than a platform-reported number.
 
@@ -107,13 +135,46 @@ Microsoft's reach also extends beyond Bing itself, into Yahoo, AOL, DuckDuckGo, 
 
 ## What This Looks Like In a Real Account
 
-In one national US services account I manage, running both platforms side by side: Google Ads averages a $9.20 CPC at a 5.5% conversion rate, which works out to roughly $167 cost per conversion. Microsoft Ads averages a $2.64 CPC at a 2.21% conversion rate, roughly $119 cost per conversion, about 29% lower than Google despite converting at less than half the rate.
+In one national US services account I managed, running both platforms side by side:
+
+<div class="compare-cards compare-cards-compact">
+  <div class="compare-card">
+    <div class="compare-card-header">
+      <svg viewBox="0 0 48 48" width="24" height="24" role="img" aria-label="Google Ads">
+        <path fill="#4285F4" d="M24 9.5c3.4 0 6.4 1.2 8.8 3.5l6.6-6.6C35.5 2.6 30.1 0 24 0 14.6 0 6.5 5.4 2.6 13.2l7.7 6c1.8-5.5 7-9.7 13.7-9.7Z"/>
+        <path fill="#34A853" d="M46.5 24.5c0-1.6-.1-3.2-.4-4.7H24v9h12.6c-.5 3-2.2 5.5-4.7 7.2l7.3 5.7c4.3-4 6.8-9.9 6.8-17.2Z"/>
+        <path fill="#FBBC05" d="M10.3 28.5a14.5 14.5 0 0 1 0-9l-7.7-6a24 24 0 0 0 0 21l7.7-6Z"/>
+        <path fill="#EA4335" d="M24 48c6.1 0 11.3-2 15-5.5l-7.3-5.7c-2 1.4-4.7 2.2-7.7 2.2-6.6 0-12.2-4.5-14.2-10.5l-7.7 6C6.5 42.6 14.6 48 24 48Z"/>
+      </svg>
+      <h3>Google Ads</h3>
+    </div>
+    <div class="compare-row"><span class="compare-label">CPC</span><span class="compare-value">$9.20</span></div>
+    <div class="compare-row"><span class="compare-label">Conversion rate</span><span class="compare-value">5.5%</span></div>
+    <div class="compare-row"><span class="compare-label">Cost per conversion</span><span class="compare-value compare-big">$167</span></div>
+  </div>
+  <div class="compare-card">
+    <div class="compare-card-header">
+      <svg viewBox="0 0 24 24" width="20" height="20" role="img" aria-label="Microsoft Ads">
+        <rect x="1" y="1" width="10" height="10" fill="#F25022"/>
+        <rect x="13" y="1" width="10" height="10" fill="#7FBA00"/>
+        <rect x="1" y="13" width="10" height="10" fill="#00A4EF"/>
+        <rect x="13" y="13" width="10" height="10" fill="#FFB900"/>
+      </svg>
+      <h3>Microsoft Ads</h3>
+    </div>
+    <div class="compare-row"><span class="compare-label">CPC</span><span class="compare-value">$2.64</span></div>
+    <div class="compare-row"><span class="compare-label">Conversion rate</span><span class="compare-value">2.21%</span></div>
+    <div class="compare-row"><span class="compare-label">Cost per conversion</span><span class="compare-value compare-big compare-highlight">$119</span></div>
+  </div>
+</div>
+
+$119 versus $167: Microsoft wins on cost per conversion by about 29%, despite converting at less than half of Google's rate.
 
 That gap is the whole thesis in one account. Google's conversion rate is more than double Microsoft's, real quality, a more deliberate searcher, a cleaner auction. But that quality comes from a crowded, competitive auction, and competition is exactly what drives the CPC up to $9.20. Microsoft's click is 71% cheaper because far fewer advertisers are bidding on it, and even with a conversion rate less than half of Google's, the cheaper click still wins on cost per conversion, $119 versus $167. Better quality on Google loses to lower competition on Microsoft once you look at the number that actually matters. It only wins because the account gets the weekly placement and search term attention described above, without that, a conversion rate this much lower than Google's would have eaten the entire CPC advantage and then some.
 
 ## Want This Managed For You?
 
-I've managed Google Ads and Microsoft Ads side by side for over ten years, on accounts spending more than $100,000 a day. If your Google Ads account is already profitable and you're weighing whether Microsoft is worth the extra platform to manage, or your Microsoft Ads account already exists but nobody has been watching the placements and search terms closely enough, that is exactly the kind of account I take on.
+I've managed millions of dollars in Google Ads and Microsoft Ads budgets side by side, over ten years. If your Google Ads account is already profitable and you're weighing whether Microsoft is worth the extra platform to manage, or your Microsoft Ads account already exists but nobody has been watching the placements and search terms closely enough, that is exactly the kind of account I take on.
 
 [Get in touch about Microsoft Ads management](/contact?interest=Ongoing%20management), or see what's included in an [audit or ongoing management](/services).
 
