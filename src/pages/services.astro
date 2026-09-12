@@ -1,8 +1,6 @@
 ---
 import Layout from '../layouts/Layout.astro';
-import { getLastUpdated } from '../lib/updated';
 
-const LAST_UPDATED = getLastUpdated();
 
 import { faqs } from '../data/faqs';
 
@@ -23,22 +21,22 @@ const servicesSchema = [
   {
     "@context": "https://schema.org",
     "@type": "Service",
-    "name": "Google Ads / Microsoft Ads / Meta Ads Audit",
-    "provider": { "@type": "Person", "name": "Kseniia Shermin" },
+    "name": "Google Ads / Microsoft Ads Audit",
+    "provider": { "@type": "Person", "@id": "https://kseniiashermin.com/#person", "name": "Kseniia Shermin" },
     "description": "A full review of account structure, tracking accuracy, budget allocation, and bidding strategy, with a prioritized list of what to fix first."
   },
   {
     "@context": "https://schema.org",
     "@type": "Service",
     "name": "Performance Marketing Consultation",
-    "provider": { "@type": "Person", "name": "Kseniia Shermin" },
+    "provider": { "@type": "Person", "@id": "https://kseniiashermin.com/#person", "name": "Kseniia Shermin" },
     "description": "A focused strategy session on paid search or paid social for lead generation accounts."
   },
   {
     "@context": "https://schema.org",
     "@type": "Service",
     "name": "Paid Search & Paid Social Management",
-    "provider": { "@type": "Person", "name": "Kseniia Shermin" },
+    "provider": { "@type": "Person", "@id": "https://kseniiashermin.com/#person", "name": "Kseniia Shermin" },
     "description": "Ongoing management of Google Ads, Microsoft Ads, and/or Meta Ads accounts for lead generation."
   }
 ];
@@ -50,26 +48,35 @@ const servicesSchema = [
   schema={[faqSchema, ...servicesSchema]}
 >
   <section>
-    <h1>Work With Me</h1>
+    <p class="eyebrow">WORK WITH ME</p>
+    <h1>Find the next step for your paid search.</h1>
     <p>Lead generation focused paid search and paid social, for B2C, B2B, and service businesses.</p>
+    <nav class="service-nav" aria-label="Choose a service"><a href="#audit">Diagnose an account</a><a href="#consultation">Work through a question</a><a href="#management">Get ongoing support</a></nav>
   </section>
 
-  <section id="audit">
-    <h2>Audit</h2>
+  <section id="audit" class="service-detail">
+    <p class="eyebrow">01 / DIAGNOSE</p>
+    <h2>Paid search audit</h2>
+    <p class="service-fit">For an existing account when you need to understand what is holding performance back and what to tackle first.</p>
     <p>A full review of account structure, tracking accuracy, budget allocation, and bidding strategy across Google Ads and/or Microsoft Ads, with a prioritized list of what to fix first.</p>
-    <a href="/contact?interest=Audit" class="btn btn-primary">Request an Audit</a>
+    <ul><li>Account structure and how campaigns are organized.</li><li>Tracking accuracy and the data guiding decisions.</li><li>Budget allocation and bidding strategy.</li><li>A prioritized list of what to fix first.</li></ul>
+    <a href="/contact/?interest=Audit" class="btn btn-primary">Request a paid audit &rarr;</a>
   </section>
 
-  <section id="consultation">
+  <section id="consultation" class="service-detail">
+    <p class="eyebrow">02 / PLAN</p>
     <h2>Consultation</h2>
+    <p class="service-fit">For a specific decision or roadblock, such as adding Microsoft Ads, reviewing a bidding approach, or deciding what to investigate next.</p>
     <p>A focused strategy session. Bring your specific questions or roadblocks, leave with a concrete plan.</p>
-    <a href="/contact?interest=Consultation" class="btn btn-secondary">Book a Call</a>
+    <a href="/contact/?interest=Consultation" class="btn btn-secondary">Discuss a consultation &rarr;</a>
   </section>
 
-  <section id="management">
-    <h2>Account Management</h2>
+  <section id="management" class="service-detail">
+    <p class="eyebrow">03 / BUILD &amp; SCALE</p>
+    <h2>Ongoing account management</h2>
+    <p class="service-fit">For businesses that need hands-on responsibility for paid acquisition, from tracking foundations to account optimization and growth.</p>
     <p>Ongoing, hands-on management of your Google Ads, Microsoft Ads, and/or Meta Ads accounts, built around a predictable lead pipeline.</p>
-    <a href="/contact?interest=Ongoing management" class="btn btn-secondary">Get in Touch</a>
+    <a href="/contact/?interest=Ongoing%20management" class="btn btn-secondary">Discuss ongoing management &rarr;</a>
   </section>
 
   <section>
@@ -80,6 +87,17 @@ const servicesSchema = [
         <p>{item.a}</p>
       </div>
     ))}
-    <p class="updated-note">Updated: {LAST_UPDATED}</p>
+  </section>
+  <section class="closing-cta">
+    <h2>Not sure which service fits?</h2>
+    <p>Tell me what you're trying to achieve and where you're getting stuck.</p>
+    <div class="cta-buttons"><a class="btn btn-primary" href="https://cal.com/kseniiashermin/15min" target="_blank" rel="noopener">Book a free intro call &nearr;</a><a class="btn btn-secondary" href="/case-studies/">See real account results &rarr;</a></div>
   </section>
 </Layout>
+<style>
+ .service-nav { display: flex; flex-wrap: wrap; gap: .75rem 1.5rem; margin-top: 1.75rem; font-weight: 600; }
+ .service-detail { border: 1px solid var(--color-line); border-radius: 12px; background: white; padding: clamp(1.5rem, 4vw, 3rem); }
+ .service-detail p, .service-detail ul { max-width: 760px; }
+ .service-fit { color: var(--color-muted); font-size: 1.1rem; }
+ .service-detail li { margin-bottom: .5rem; }
+</style>

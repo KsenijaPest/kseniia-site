@@ -1,56 +1,45 @@
+---
+import ContactForm from './ContactForm.astro';
+---
 <dialog class="quick-inquiry" id="quick-inquiry" aria-labelledby="quick-inquiry-heading">
   <div class="quick-inquiry__header">
     <div>
       <p class="eyebrow">START THE CONVERSATION</p>
-      <h2 id="quick-inquiry-heading">Tell me about your account.</h2>
-      <p>Share the essentials and I'll follow up within 1-2 business days.</p>
+      <h2 id="quick-inquiry-heading" tabindex="-1" autofocus>How can I help?</h2>
+      <p>Share the essentials. I'll follow up within 1-2 business days.</p>
     </div>
     <button class="quick-inquiry__close" type="button" aria-label="Close form" data-close-inquiry>&times;</button>
   </div>
-
-  <form action="https://api.web3forms.com/submit" method="POST">
-    <input type="hidden" name="access_key" value="067d94ff-2b9f-4d41-9199-09d942719de8" />
-    <input type="hidden" name="redirect" value="https://kseniiashermin.com/thank-you" />
-    <input type="hidden" name="interest" value="General inquiry from homepage" />
-
-    <label for="quick-name">Name</label>
-    <input type="text" id="quick-name" name="name" autocomplete="name" required />
-
-    <label for="quick-email">Email</label>
-    <input type="email" id="quick-email" name="email" autocomplete="email" required />
-
-    <label for="quick-message">What would you like to discuss?</label>
-    <textarea id="quick-message" name="message" rows="4" required></textarea>
-
-    <p class="form-privacy">Your details are used to reply to your inquiry. <a href="/privacy-policy">Privacy policy</a>.</p>
-    <button type="submit" class="btn btn-primary">Send inquiry &rarr;</button>
-  </form>
+  <ContactForm source="hero" compact />
+  <p class="booking-option"><a href="https://cal.com/kseniiashermin/15min" target="_blank" rel="noopener">Prefer a free intro call? Choose a time &nearr;</a></p>
 </dialog>
-
 <script>
-  const dialog = document.getElementById('quick-inquiry');
-  const opener = document.querySelector('[data-open-inquiry]');
-  const closer = document.querySelector('[data-close-inquiry]');
-
-  opener?.addEventListener('click', () => dialog?.showModal());
-  closer?.addEventListener('click', () => dialog?.close());
-  dialog?.addEventListener('click', (event) => {
-    if (event.target === dialog) dialog.close();
-  });
+  const dialog = document.querySelector<HTMLDialogElement>('#quick-inquiry');
+  const opener = document.querySelector<HTMLAnchorElement>('[data-open-inquiry]');
+  if (dialog && typeof dialog.showModal === 'function') {
+    opener?.setAttribute('aria-haspopup', 'dialog');
+    opener?.setAttribute('aria-controls', dialog.id);
+    opener?.addEventListener('click', event => {
+      if (event.metaKey || event.ctrlKey || event.shiftKey || event.altKey) return;
+      event.preventDefault();
+      dialog.showModal();
+      document.documentElement.classList.add('inquiry-open');
+    });
+    dialog.querySelector('[data-close-inquiry]')?.addEventListener('click', () => dialog.close());
+    dialog.addEventListener('close', () => {
+      document.documentElement.classList.remove('inquiry-open');
+      opener?.focus();
+    });
+  }
 </script>
-
 <style>
-  .quick-inquiry { width: min(100% - 2rem, 620px); border: 0; border-radius: 12px; padding: 2rem; background: var(--color-bg); color: var(--color-ink); box-shadow: 0 24px 70px rgba(23, 37, 56, .25); }
+  :global(html.inquiry-open) { overflow: hidden; }
+  .quick-inquiry { width: min(100% - 2rem, 620px); max-height: calc(100dvh - 2rem); overflow-y: auto; overscroll-behavior: contain; border: 0; border-radius: 12px; padding: 2rem; background: var(--color-bg); color: var(--color-ink); box-shadow: 0 24px 70px rgba(23, 37, 56, .25); }
   .quick-inquiry::backdrop { background: rgba(23, 37, 56, .6); }
-  .quick-inquiry__header { display: flex; justify-content: space-between; gap: 1.5rem; margin-bottom: 1.25rem; }
+  .quick-inquiry__header { display: flex; justify-content: space-between; gap: 1.5rem; margin-bottom: 1rem; }
   .quick-inquiry__header h2 { font-size: 2rem; margin-bottom: .5rem; }
   .quick-inquiry__header p:not(.eyebrow) { color: var(--color-muted); margin: 0; }
-  .quick-inquiry__close { width: 2.5rem; height: 2.5rem; flex: 0 0 auto; border: 1px solid var(--color-line); border-radius: 50%; background: white; color: var(--color-ink); font-size: 1.6rem; line-height: 1; cursor: pointer; }
-  form { display: grid; gap: .55rem; }
-  label { font-size: .9rem; font-weight: 650; margin-top: .6rem; }
-  input, textarea { width: 100%; min-width: 0; padding: .8rem; background: #fff; color: var(--color-ink); border: 1px solid #b9c0ca; border-radius: 6px; font: inherit; }
-  textarea { resize: vertical; }
-  .form-privacy { color: var(--color-muted); font-size: .78rem; margin: .8rem 0; }
-  form button[type='submit'] { cursor: pointer; width: 100%; }
+  .quick-inquiry__close { width: 2.75rem; height: 2.75rem; flex: 0 0 auto; border: 1px solid var(--color-line); border-radius: 50%; background: white; color: var(--color-ink); font-size: 1.6rem; cursor: pointer; }
+  .booking-option { font-size: .85rem; margin-bottom: 0; }
   @media (max-width: 640px) { .quick-inquiry { padding: 1.25rem; } .quick-inquiry__header h2 { font-size: 1.65rem; } }
 </style>

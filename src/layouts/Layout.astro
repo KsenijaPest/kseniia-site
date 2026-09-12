@@ -4,9 +4,10 @@ export interface Props {
   description: string;
   schema?: object | object[];
   noindex?: boolean;
+  article?: boolean;
 }
 
-const { title, description, schema, noindex } = Astro.props;
+const { title, description, schema, noindex, article = false } = Astro.props;
 const schemaArray = schema ? (Array.isArray(schema) ? schema : [schema]) : [];
 const canonicalURL = new URL(Astro.url.pathname, Astro.site);
 const ogImageURL = new URL('/og-image.png', Astro.site);
@@ -33,7 +34,7 @@ const ogImageURL = new URL('/og-image.png', Astro.site);
       }
     </style></noscript>
     <!-- Open Graph -->
-    <meta property="og:type" content="website" />
+    <meta property="og:type" content={article ? 'article' : 'website'} />
     <meta property="og:title" content={`${title} | Kseniia Shermin`} />
     <meta property="og:description" content={description} />
     <meta property="og:url" content={canonicalURL} />
@@ -61,8 +62,38 @@ const ogImageURL = new URL('/og-image.png', Astro.site);
     <script is:inline>
       const GA4_ID = 'G-ZSQEP4F77K';
       const CLARITY_ID = 'y4fkcqivic';
+      let analyticsLoaded = false;
+      let consentState = null;
+      try { consentState = localStorage.getItem('cookie-consent'); } catch {}
+      function saveConsent(value) {
+        consentState = value;
+        try { localStorage.setItem('cookie-consent', value); } catch {}
+      }
+      function trackInquiryEvent(name, parameters) {
+        if (consentState === 'accepted' && typeof window.gtag === 'function') {
+          window.gtag('event', name, parameters);
+        }
+      }
+      document.addEventListener('inquiry-analytics', (event) => {
+        const { name, source, intent } = event.detail;
+        if (['inquiry_start', 'form_submission'].includes(name)) {
+          trackInquiryEvent(name, { form_source: source, inquiry_intent: intent });
+        }
+      });
+      document.addEventListener('click', (event) => {
+        const link = event.target instanceof Element ? event.target.closest('a') : null;
+        if (!link) return;
+        const placement = link.dataset.cta || (link.closest('header') ? 'header' : link.closest('dialog') ? 'hero-dialog' : location.pathname);
+        if (link.href.startsWith('https://cal.com/kseniiashermin/')) {
+          trackInquiryEvent('booking_link_click', { placement });
+        } else if (link.hasAttribute('data-cta') || link.getAttribute('href')?.includes('contact')) {
+          trackInquiryEvent('inquiry_cta_click', { placement });
+        }
+      });
 
       function loadGA4() {
+        if (analyticsLoaded) return;
+        analyticsLoaded = true;
         const script = document.createElement('script');
         script.async = true;
         script.src = `https://www.googletagmanager.com/gtag/js?id=${GA4_ID}`;
@@ -83,7 +114,7 @@ const ogImageURL = new URL('/og-image.png', Astro.site);
         })(window, document, 'clarity', 'script', CLARITY_ID);
       }
 
-      if (localStorage.getItem('cookie-consent') === 'accepted') {
+      if (consentState === 'accepted') {
         loadGA4();
         loadClarity();
       }
@@ -102,10 +133,10 @@ const ogImageURL = new URL('/og-image.png', Astro.site);
         </button>
         <div class="nav-links" id="nav-links">
           <a href="/#services">Services</a>
-          <a href="/for-employers">For Employers</a>
+          <a href="/for-employers/">For Employers</a>
           <a href="/#results">Results</a>
-          <a href="/blog">Blog</a>
-          <a href="/about">About</a>
+          <a href="/blog/">Blog</a>
+          <a href="/about/">About</a>
           <a href="/#contact" class="nav-cta">Let's talk &rarr;</a>
         </div>
       </nav>
@@ -120,7 +151,7 @@ const ogImageURL = new URL('/og-image.png', Astro.site);
       <p class="footer-links">
         <a href="https://www.linkedin.com/in/kseniiashermin/" target="_blank" rel="noopener">Kseniia Shermin on LinkedIn</a>
         <span class="footer-sep">&middot;</span>
-        <a href="/privacy-policy">Privacy Policy</a>
+        <a href="/privacy-policy/">Privacy Policy</a>
       </p>
     </footer>
 
@@ -134,21 +165,21 @@ const ogImageURL = new URL('/og-image.png', Astro.site);
 
     <script is:inline>
       const banner = document.getElementById('cookie-banner');
-      const consent = localStorage.getItem('cookie-consent');
+      const consent = consentState;
 
       if (consent !== 'accepted' && consent !== 'declined') {
         banner?.removeAttribute('hidden');
       }
 
       document.getElementById('cookie-accept')?.addEventListener('click', () => {
-        localStorage.setItem('cookie-consent', 'accepted');
+        saveConsent('accepted');
         banner?.setAttribute('hidden', '');
         loadGA4();
         loadClarity();
       });
 
       document.getElementById('cookie-decline')?.addEventListener('click', () => {
-        localStorage.setItem('cookie-consent', 'declined');
+        saveConsent('declined');
         banner?.setAttribute('hidden', '');
       });
     </script>

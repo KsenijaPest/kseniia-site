@@ -25,8 +25,8 @@ const articleSchema = {
   "description": post.data.description,
   "datePublished": post.data.publishDate.toISOString(),
   "dateModified": (post.data.updatedDate ?? post.data.publishDate).toISOString(),
-  "author": { "@type": "Person", "name": "Kseniia Shermin", "url": "https://kseniiashermin.com/about" },
-  "publisher": { "@type": "Person", "name": "Kseniia Shermin" },
+  "author": { "@type": "Person", "@id": "https://kseniiashermin.com/#person", "name": "Kseniia Shermin", "url": "https://kseniiashermin.com/about/" },
+  "publisher": { "@type": "Person", "@id": "https://kseniiashermin.com/#person", "name": "Kseniia Shermin" },
   "mainEntityOfPage": `https://kseniiashermin.com/blog/${post.id}/`
 };
 
@@ -43,12 +43,13 @@ const faqSchema = post.data.faq.length > 0 ? {
 const schema = faqSchema ? [articleSchema, faqSchema] : [articleSchema];
 ---
 
-<Layout title={post.data.title} description={post.data.description} schema={schema}>
+<Layout title={post.data.title} description={post.data.description} schema={schema} article>
   <article class="post">
     <p class="post-date">
       Published {dateFormatted}{updatedFormatted && ` · Updated ${updatedFormatted}`}
     </p>
     <h1>{post.data.title}</h1>
+    <p class="post-byline">By <a href="/about/" rel="author">Kseniia Shermin</a>, Performance Marketing Manager with 10+ years in paid search and paid social.</p>
 
     <div class="post-body">
       <Content />
@@ -66,7 +67,7 @@ const schema = faqSchema ? [articleSchema, faqSchema] : [articleSchema];
       </section>
     )}
 
-    <p class="post-back"><a href="/blog">&larr; Back to Blog</a></p>
+    <p class="post-back"><a href="/blog/">&larr; Back to Blog</a></p>
   </article>
 </Layout>
 

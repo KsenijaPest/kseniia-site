@@ -1,6 +1,6 @@
 # Kseniia Shermin : Full Site Content
 
-> Performance Marketing Manager with 10+ years of hands-on paid search experience. Manages Google Ads and Microsoft Ads accounts spending over $100,000/day, plus Meta Ads and LinkedIn Ads. Focused on lead generation for B2C, B2B, and service businesses.
+> Performance Marketing Manager with 10+ years of hands-on paid search experience. Experience managing Google Ads and Microsoft Ads accounts spending over $100,000/day, plus Meta Ads and LinkedIn Ads. Focused on lead generation for B2C, B2B, and service businesses.
 
 This file contains detailed site content and a blog summary for AI systems. The linked pages are the authoritative source for complete content. For a short overview and page index, see /llms.txt.
 
@@ -14,23 +14,15 @@ Kseniia Shermin / Performance Marketing Manager
 
 I help B2C, B2B, and service businesses grow through Google Ads, Microsoft Ads, and paid social. Hands-on account management, from tracking foundations to scaling acquisition.
 
-The homepage includes all four case study results, the three services, an employer section, and the service FAQs documented below. The contact form is available at /#contact and /contact. Book a free intro call: https://cal.com/kseniiashermin/15min. Paid audits and consultations can be requested through the contact form.
+The homepage includes all four case study results, the three services, an employer section, and the service FAQs documented below. The first homepage CTA opens a quick inquiry form, with /#contact as its fallback. A detailed form is available at /#contact and /contact/. Book a free intro call: https://cal.com/kseniiashermin/15min. Paid audits and consultations can be requested through the contact form.
 
 10+ years running paid search and paid social for B2C, B2B, and service businesses. Managing Google Ads and Microsoft Ads accounts spending over $100,000 per day, plus Meta Ads, LinkedIn Ads, and virtually any pay-per-click platform.
 
 Experience: 10+ years. $100K+ daily ad spend managed.
 
-## Paid search is where I live.
+## Platform experience
 
-Paid search is where I live. Over 10 years running Google Ads and Microsoft Ads accounts at scale means knowing the auction mechanics, the bid strategy tradeoffs, and the reporting quirks well enough to know when to trust the platform's automation and when to override it.
-
-### Google Ads
-Search, Display, Performance Max, Shopping, and YouTube. Comfortable building account structures for scale, tuning Smart Bidding strategies, and getting conversion tracking right before touching anything else.
-
-### Microsoft Ads
-Microsoft Ads is not just an import job from Google Ads. It's a genuinely different platform with its own auction dynamics and audience network, and it rewards a different approach. Years of hands-on Microsoft Ads campaign management have consistently delivered strong traffic, lead quality, and ROI.
-
-Also experienced with: Meta Ads, LinkedIn Ads, and other PPC platforms depending on where the audience actually is.
+Google Ads and Microsoft Ads, with the tracking to guide them. Search, Display, Performance Max, Shopping, and YouTube. Also experienced with Meta Ads and LinkedIn Ads. I build account structures, evaluate bidding strategies, and get conversion tracking right before scaling.
 
 ## Industries
 
@@ -157,24 +149,19 @@ Yes, if needed.
 
 ## For Employers : https://kseniiashermin.com/for-employers/
 
-# Looking to Hire a Performance Marketing Manager
+# Paid search leadership. Hands-on performance experience.
 
-10+ years running paid search and paid social, including Google Ads, Microsoft Ads, Meta Ads, and LinkedIn Ads, with hands-on experience managing accounts spending over $100,000 per day. Focused on lead generation for B2C, B2B, and service businesses.
+10+ years in paid search and paid social, with experience managing over $100,000 in daily ad spend. Background includes Director of Marketing and Head of PPC responsibilities.
 
-Stats: 10+ years of experience. $100K+ daily ad spend managed. 5X-36X account growth delivered.
+Relevant experience for Head of Growth, Paid Search Director, and Senior Performance Marketing Manager conversations: multi-channel acquisition at P7 Ventures, recruiting and managing PPC specialists at Excel™, Riverhouse Wellness acquisition infrastructure using CallTrackingMetrics, Salesforce, and n8n, and Power BI reporting for marketing and management decisions.
 
-## What I Bring
+Results are presented individually: 5X lead gen program growth in 2 years for iHealthQuotes, operational scale within 90 days for Riverhouse Wellness, 25X health insurance vertical growth, and 36x monthly order growth with cost per order reduced by 2.5x for E-techno. Complete context is in the case studies above.
 
-**Scale:** Direct experience managing large, complex accounts across multiple platforms simultaneously.
+A proposed approach to a new role: agree on the business outcome, check measurement, prioritize experiments, and make decisions visible. This describes an approach, not a guaranteed performance result.
 
-**Process, not just execution:** I build repeatable tracking, testing, and reporting systems, not one-off campaign wins.
-
-**Range across industries:** Health insurance (ACA, U65, Medicare O65), life and final expense, auto and home insurance, mental health treatment, telecom, e-commerce, and B2B SaaS.
-
-**Team leadership:** Recruited, trained, and managed teams of PPC specialists, not just individual-contributor campaign work.
-
-## Want the Details?
-Full account history and results are on the case studies page (/case-studies), and the complete career timeline is on the about page (/about).
+Hiring contact: https://kseniiashermin.com/contact/?interest=Full-time%20%2F%20fractional%20role
+LinkedIn: https://www.linkedin.com/in/kseniiashermin/
+Complete career history and recommendations: https://kseniiashermin.com/about/
 
 ---
 
@@ -232,11 +219,11 @@ I'm AI-native: I build AI agents that help manage accounts, automate data pipeli
 
 ## Contact : https://kseniiashermin.com/contact/
 
-# What's next for your paid search?
+# Let's discuss your account or next hire.
 
 Tell me a bit about your account and what you're looking for, and I'll follow up within 1-2 business days.
 
-Contact form fields: name, email, optional approximate monthly ad spend (Not applicable, hiring inquiry / Under $10,000 / $10,000-$50,000 / $50,000-$200,000 / $200,000+), what you're looking for (Audit / Consultation / Ongoing management / Full-time or fractional role), and a free-text message.
+Both inquiry forms require name, email, and an interest selection (Audit / Consultation / Ongoing management / Full-time or fractional role / Not sure yet). Message is optional. The detailed form also has optional monthly ad spend (Under $10,000 / $10,000-$50,000 / $50,000-$200,000 / $200,000+), hidden for hiring inquiries when JavaScript is available. The quick form omits ad spend. Both forms show a confirmation after provider-confirmed success, retain entries on error, and support native form submission without JavaScript.
 
 Prefer to book directly: https://cal.com/kseniiashermin/15min
 

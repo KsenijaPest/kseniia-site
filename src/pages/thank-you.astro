@@ -19,9 +19,4 @@ import Layout from '../layouts/Layout.astro';
     </div>
   </section>
 
-  <script is:inline>
-    if (localStorage.getItem('cookie-consent') === 'accepted' && typeof window.gtag === 'function') {
-      window.gtag('event', 'form_submission');
-    }
-  </script>
 </Layout>

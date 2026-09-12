@@ -1,68 +1,88 @@
 ---
 import Layout from '../layouts/Layout.astro';
-import { getLastUpdated } from '../lib/updated';
-
-const LAST_UPDATED = getLastUpdated();
+import { caseStudies } from '../data/case-studies';
 ---
-
 <Layout
-  title="For Employers"
-  description="Performance Marketing Manager with 10+ years of experience managing large-scale paid search and paid social accounts. Open to full-time and fractional roles."
+  title="Paid Search Leadership & Senior Performance Marketing"
+  description="Explore Kseniia Shermin's paid search leadership, team management, acquisition systems, and verified results for full-time and fractional opportunities."
 >
-  <section>
-    <h1>Looking to Hire a Performance Marketing Manager</h1>
-    <p>
-      10+ years running paid search and paid social, including Google Ads, Microsoft Ads,
-      Meta Ads, and LinkedIn Ads, with hands-on experience managing accounts spending
-      over $100,000 per day. Focused on lead generation for B2C, B2B, and service businesses.
-    </p>
-    <!-- TODO: add resume download link, LinkedIn link, and specific role interests (full-time / fractional / relocation-open) -->
+  <section class="employer-intro">
+    <p class="eyebrow">FOR HIRING MANAGERS</p>
+    <h1>Paid search leadership.<br />Hands-on performance experience.</h1>
+    <p class="intro-copy">10+ years in paid search and paid social, with experience managing over $100,000 in daily ad spend. My background combines Director of Marketing and Head of PPC responsibilities with the account work, tracking, and reporting behind acquisition growth.</p>
+    <p>Considering a Head of Growth, Paid Search Director, or Senior Performance Marketing Manager? Explore my work in lead generation, multi-platform acquisition, team development, and measurement.</p>
     <div class="cta-buttons">
-      <a href="/about" class="btn btn-secondary">Read Full Background &rarr;</a>
-      <a href="/contact?interest=Full-time / fractional role" class="btn btn-primary">Get in Touch</a>
+      <a href="/contact/?interest=Full-time%20%2F%20fractional%20role" class="btn btn-primary">Discuss a role &rarr;</a>
+      <a href="https://www.linkedin.com/in/kseniiashermin/" class="btn btn-secondary" target="_blank" rel="noopener">View LinkedIn &nearr;</a>
+      <a href="/about/#career" class="text-link">Full career history &rarr;</a>
     </div>
-
-    <div class="stats-row">
-      <div class="stat">
-        <span class="stat-number">10+</span>
-        <span class="stat-label">Years of experience</span>
-      </div>
-      <div class="stat">
-        <span class="stat-number">$100K+</span>
-        <span class="stat-label">Daily ad spend managed</span>
-      </div>
-      <div class="stat">
-        <span class="stat-number">5X-36X</span>
-        <span class="stat-label">Account growth delivered</span>
-      </div>
-    </div>
-    <p class="updated-note">Updated: {LAST_UPDATED}</p>
   </section>
 
   <section>
-    <h2>What I Bring</h2>
+    <p class="eyebrow">EXPERIENCE IN PRACTICE</p>
+    <h2>What I've been responsible for.</h2>
     <div class="split-cards">
-      <div class="split-card">
-        <h3>Scale</h3>
-        <p>Direct experience managing large, complex accounts across multiple platforms simultaneously.</p>
-      </div>
-      <div class="split-card">
-        <h3>Process, not just execution</h3>
-        <p>I build repeatable tracking, testing, and reporting systems, not one-off campaign wins.</p>
-      </div>
-      <div class="split-card">
-        <h3>Range across industries</h3>
-        <p>Health insurance (ACA, U65, Medicare O65), life and final expense, auto and home insurance, mental health treatment, telecom, e-commerce, and B2B SaaS. See the full breakdown on the <a href="/#industries">industries page</a>.</p>
-      </div>
-      <div class="split-card">
-        <h3>Team leadership</h3>
-        <p>Recruited, trained, and managed teams of PPC specialists, not just individual-contributor campaign work.</p>
-      </div>
+      <article class="split-card">
+        <h3>Multi-channel acquisition</h3>
+        <p>At P7 Ventures, I led paid search strategy across business units, managed vendors, and worked toward CPA and volume targets. For iHealthQuotes, I optimized Google Ads and launched Microsoft Ads and other PPC platforms.</p>
+        <a class="text-link" href="/case-studies/#case-1">See the iHealthQuotes case &rarr;</a>
+      </article>
+      <article class="split-card">
+        <h3>Team development</h3>
+        <p>At Excel™, I recruited, trained, and managed a team of PPC specialists while managing insurance lead and call generation across six verticals.</p>
+        <a class="text-link" href="/case-studies/#case-3">See the insurance account scope &rarr;</a>
+      </article>
+      <article class="split-card">
+        <h3>Acquisition infrastructure</h3>
+        <p>For Riverhouse Wellness, I built performance marketing infrastructure, conversion tracking, and data pipelines from scratch using CallTrackingMetrics, Salesforce, and n8n.</p>
+        <a class="text-link" href="/case-studies/#case-2">See the launch work &rarr;</a>
+      </article>
+      <article class="split-card">
+        <h3>Reporting for decisions</h3>
+        <p>My work includes automated pipelines for real-time ROI tracking and a Power BI analytics system built from scratch, including the data model and reports used for marketing and management decisions.</p>
+        <a class="text-link" href="/case-studies/#case-4">See the e-commerce case &rarr;</a>
+      </article>
     </div>
   </section>
 
   <section>
-    <h2>Want the Details?</h2>
-    <p>Full account history and results are on the <a href="/case-studies">case studies page</a>, and the complete career timeline is on the <a href="/about">about page</a>.</p>
+    <p class="eyebrow">VERIFIED ACCOUNT RESULTS</p>
+    <h2>Different challenges. Specific outcomes.</h2>
+    <div class="split-cards">
+      {caseStudies.map((cs, index) => <article class="split-card">
+        <h3>{cs.name}</h3>
+        <p>{cs.result}</p>
+        <a class="text-link" href={`/case-studies/#case-${index + 1}`}>Context and contribution &rarr;</a>
+      </article>)}
+    </div>
+  </section>
+
+  <section>
+    <p class="eyebrow">HOW I WOULD APPROACH A NEW ROLE</p>
+    <h2>Establish the foundation, then prioritize growth.</h2>
+    <p>The priorities would depend on your business, team, and account maturity. This is the approach I would bring to that first conversation.</p>
+    <ol class="approach-list">
+      <li><strong>Agree on the business outcome.</strong> Understand the growth goal, lead-quality requirements, and constraints with the team.</li>
+      <li><strong>Check the measurement.</strong> Review conversion tracking and reporting before using account data to guide investment.</li>
+      <li><strong>Choose the next experiments.</strong> Prioritize account structure, bidding, audience, creative, and landing-page opportunities against the goal.</li>
+      <li><strong>Make decisions visible.</strong> Establish a clear view of performance, test results, and next actions.</li>
+    </ol>
+  </section>
+
+  <section class="closing-cta">
+    <h2>Let's discuss the team and the opportunity.</h2>
+    <p>Share the role, the acquisition challenge, and what success would look like. You can also read my complete career history and colleague recommendations.</p>
+    <div class="cta-buttons">
+      <a href="/contact/?interest=Full-time%20%2F%20fractional%20role" class="btn btn-primary">Start a hiring conversation &rarr;</a>
+      <a href="/about/" class="btn btn-secondary">Background &amp; recommendations &rarr;</a>
+    </div>
   </section>
 </Layout>
+<style>
+ .employer-intro { max-width: 900px; }
+ .intro-copy { font-size: 1.15rem; color: var(--color-muted); }
+ .cta-buttons { align-items: center; }
+ .split-card p { color: var(--color-muted); }
+ .approach-list { padding-left: 1.5rem; max-width: 850px; }
+ .approach-list li { margin-bottom: 1.25rem; padding-left: .5rem; }
+</style>

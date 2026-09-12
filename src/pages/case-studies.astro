@@ -1,10 +1,8 @@
 ---
 import Layout from '../layouts/Layout.astro';
-import { getLastUpdated } from '../lib/updated';
 
 import { caseStudies } from '../data/case-studies';
 
-const LAST_UPDATED = getLastUpdated();
 ---
 
 <Layout
@@ -45,12 +43,11 @@ const LAST_UPDATED = getLastUpdated();
     <h2>Let's look at your account.</h2>
     <p>Request a paid audit for a prioritized list of what to fix, or book a free intro call to discuss what you need.</p>
     <div class="cta-buttons">
-      <a href="/contact?interest=Audit" class="btn btn-primary">Request an audit &rarr;</a>
+      <a href="/contact/?interest=Audit" class="btn btn-primary">Request an audit &rarr;</a>
       <a href="https://cal.com/kseniiashermin/15min" class="btn btn-secondary" target="_blank" rel="noopener">Book an intro call &nearr;</a>
     </div>
-    <p>Hiring? <a href="/for-employers">Explore my experience and approach &rarr;</a></p>
+    <p>Hiring? <a href="/for-employers/">Explore my experience and approach &rarr;</a></p>
   </section>
-  <p class="updated-note">Updated: {LAST_UPDATED}</p>
 </Layout>
 
 <style>

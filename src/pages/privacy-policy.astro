@@ -1,8 +1,6 @@
 ---
 import Layout from '../layouts/Layout.astro';
-import { getLastUpdated } from '../lib/updated';
 
-const LAST_UPDATED = getLastUpdated();
 ---
 
 <Layout
@@ -11,7 +9,7 @@ const LAST_UPDATED = getLastUpdated();
 >
   <section>
     <h1>Privacy Policy</h1>
-    <p class="updated-note">Updated: {LAST_UPDATED}</p>
+    <p class="updated-note">Updated: September 12, 2026</p>
     <p>
       This page explains what information kseniiashermin.com collects, why, and how you
       can ask me to change or delete it. This is a personal site run by one person
@@ -24,7 +22,7 @@ const LAST_UPDATED = getLastUpdated();
     <h2>What this site collects</h2>
     <h3>The contact form</h3>
     <p>
-      If you fill out the form on the homepage or <a href="/contact">Contact page</a>, it collects
+      If you fill out the form on the homepage or <a href="/contact/">Contact page</a>, it collects
       your name, email address, approximate ad spend range, what you're looking for, and
       whatever you write in the message field. That submission is processed by
       Web3Forms (a third-party form service) and delivered to me by email. I use it only
@@ -46,6 +44,7 @@ const LAST_UPDATED = getLastUpdated();
       cookies are set. It may also use Cloudflare Web Analytics, which is cookie-free and
       doesn't require consent.
     </p>
+    <p>With analytics consent, this site records inquiry-link clicks, booking-link clicks, form starts, and submissions confirmed by the form service. These events identify the form location and selected service or hiring interest. The custom inquiry events do not include your name, email address, or message. A booking-link click does not confirm that a meeting was booked.</p>
     <h3>Hosting</h3>
     <p>
       This site is served through Cloudflare. Like virtually all web hosts, Cloudflare's
@@ -69,7 +68,7 @@ const LAST_UPDATED = getLastUpdated();
     <p>
       You can ask me at any time to tell you what information I have about you, correct
       it, or delete it. The fastest way to reach me is through the
-      <a href="/contact">Contact form</a> or a message on
+      <a href="/contact/">Contact form</a> or a message on
       <a href="https://www.linkedin.com/in/kseniiashermin/" target="_blank" rel="noopener">LinkedIn</a>.
       I'll respond within a reasonable time.
     </p>

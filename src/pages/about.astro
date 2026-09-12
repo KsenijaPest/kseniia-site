@@ -1,25 +1,26 @@
 ---
 import Layout from '../layouts/Layout.astro';
 import { Image } from 'astro:assets';
-import { getLastUpdated } from '../lib/updated';
 import aboutPhoto from '../assets/kseniia-shermin.jpg';
 
-const LAST_UPDATED = getLastUpdated();
 
 const schema = {
   "@context": "https://schema.org",
   "@type": "Person",
+  "@id": "https://kseniiashermin.com/#person",
+  "image": "https://kseniiashermin.com/kseniia-shermin.jpg",
+  "sameAs": ["https://www.linkedin.com/in/kseniiashermin/"],
   "name": "Kseniia Shermin",
   "jobTitle": "Performance Marketing Manager",
   "description": "10+ years of experience in paid search and paid social, specializing in lead generation for B2C, B2B, and service businesses.",
-  "url": "https://kseniiashermin.com/about"
+  "url": "https://kseniiashermin.com/"
 };
 
 import { testimonials } from '../data/testimonials';
 ---
 
 <Layout
-  title="About"
+  title="Paid Search Experience & Career"
   description="Performance Marketing Manager with 10+ years of experience in paid search and paid social lead generation."
   schema={schema}
 >
@@ -40,7 +41,6 @@ import { testimonials } from '../data/testimonials';
     </p>
 
     <!-- TODO: add Google Ads / Microsoft Advertising certifications here as trust badges -->
-    <p class="updated-note">Updated: {LAST_UPDATED}</p>
   </section>
 
   <section class="career-history" id="career">
