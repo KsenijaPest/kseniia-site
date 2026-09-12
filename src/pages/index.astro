@@ -3,6 +3,7 @@ import Layout from '../layouts/Layout.astro';
 import { Image } from 'astro:assets';
 import { getLastUpdated } from '../lib/updated';
 import ContactSection from '../components/ContactSection.astro';
+import QuickInquiry from '../components/QuickInquiry.astro';
 import { caseStudies } from '../data/case-studies';
 import { testimonials } from '../data/testimonials';
 import { faqs } from '../data/faqs';
@@ -67,7 +68,7 @@ const professionalServiceSchema = {
       <h1 id="hero-heading">Paid search.<br />Lead quality.<br /><em>Room to scale.</em></h1>
       <p class="hero-description">I help B2C, B2B, and service businesses grow through Google Ads, Microsoft Ads, and paid social. Hands-on account management, from tracking foundations to scaling acquisition.</p>
       <div class="cta-buttons">
-        <a href="#contact" class="btn btn-primary">Let's talk about your account &rarr;</a>
+        <button class="btn btn-primary" type="button" data-open-inquiry>Let's talk about your account &rarr;</button>
         <a href="#results" class="hero-proof-link">See the results &darr;</a>
       </div>
       <p class="hiring-link">Building your team? <a href="#for-employers">Explore full-time &amp; fractional fit &rarr;</a></p>
@@ -181,6 +182,7 @@ const professionalServiceSchema = {
   <section class="faq-section"><div><p class="eyebrow">BEFORE WE TALK</p><h2>A few useful answers.</h2><a class="text-link" href="/services">Explore services &rarr;</a></div><div>{faqs.map(item => <details class="faq-item"><summary>{item.q}</summary><p>{item.a}</p></details>)}</div></section>
   <ContactSection />
   <p class="updated-note">Updated: {LAST_UPDATED}</p>
+  <QuickInquiry />
 </Layout>
 
 <style>
