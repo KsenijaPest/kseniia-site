@@ -23,7 +23,7 @@ const servicesSchema = [
     "@type": "Service",
     "name": "Google Ads / Microsoft Ads Audit",
     "provider": { "@type": "Person", "@id": "https://kseniiashermin.com/#person", "name": "Kseniia Shermin" },
-    "description": "A full review of account structure, tracking accuracy, budget allocation, and bidding strategy, with a prioritized list of what to fix first."
+    "description": faqs[0].a
   },
   {
     "@context": "https://schema.org",
@@ -57,9 +57,11 @@ const servicesSchema = [
   <section id="audit" class="service-detail">
     <p class="eyebrow">01 / DIAGNOSE</p>
     <h2>Paid search audit</h2>
-    <p class="service-fit">For an existing account when you need to understand what is holding performance back and what to tackle first.</p>
-    <p>A full review of account structure, tracking accuracy, budget allocation, and bidding strategy across Google Ads and/or Microsoft Ads, with a prioritized list of what to fix first.</p>
-    <ul><li>Account structure and how campaigns are organized.</li><li>Tracking accuracy and the data guiding decisions.</li><li>Budget allocation and bidding strategy.</li><li>A prioritized list of what to fix first.</li></ul>
+    <p class="service-fit">For an account with performance issues, conversion-tracking problems, or settings that need a closer look.</p>
+    <p>{faqs[0].a}</p>
+    <ul><li>Review account structure and settings.</li><li>Investigate conversion tracking and performance issues.</li><li>Evaluate budget allocation and bidding strategy.</li><li>Recommend an improvement strategy and what to fix first.</li></ul>
+    <p><strong>What I need:</strong> Access to your advertising account.</p>
+    <p><strong>Implementation:</strong> Discussed separately, depending on the findings and scope of work.</p>
     <a href="/contact/?interest=Audit" class="btn btn-primary">Request a paid audit &rarr;</a>
   </section>
 
