@@ -1,7 +1,7 @@
 export const faqs = [
   {
     q: "What's included in a paid search audit?",
-    a: "A full review of your Google Ads and/or Microsoft Ads account, including structure, settings, conversion tracking, budget allocation, and bidding strategy. I investigate performance issues and recommend an improvement strategy with a prioritized list of what to fix first."
+    a: "A full review of your Google Ads and/or Microsoft Ads account, including structure, settings, conversion tracking, budget allocation, and bidding strategy. You receive a written report covering the findings, a recommended improvement strategy, and a prioritized list of what to fix first."
   },
   {
     q: "What access do you need for an audit?",
