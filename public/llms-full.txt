@@ -1,20 +1,26 @@
-# Kseniia Shermin — Full Site Content
+# Kseniia Shermin : Full Site Content
 
 > Performance Marketing Manager with 10+ years of hands-on paid search experience. Manages Google Ads and Microsoft Ads accounts spending over $100,000/day, plus Meta Ads and LinkedIn Ads. Focused on lead generation for B2C, B2B, and service businesses.
 
-This file contains the full text of every page on kseniiashermin.com, for AI systems that want complete source text rather than a summary. For a short overview and page index, see /llms.txt.
+This file contains detailed site content and a blog summary for AI systems. The linked pages are the authoritative source for complete content. For a short overview and page index, see /llms.txt.
 
 ---
 
-## Home — https://kseniiashermin.com/
+## Home : https://kseniiashermin.com/
 
-# Performance Marketing Manager for Lead Gen at Scale
+# Paid search. Lead quality. Room to scale.
+
+Kseniia Shermin / Performance Marketing Manager
+
+I help B2C, B2B, and service businesses grow through Google Ads, Microsoft Ads, and paid social. Hands-on account management, from tracking foundations to scaling acquisition.
+
+The homepage includes all four case study results, the three services, an employer section, and the service FAQs documented below. The contact form is available at /#contact and /contact. Book a free intro call: https://cal.com/kseniiashermin/15min. Paid audits and consultations can be requested through the contact form.
 
 10+ years running paid search and paid social for B2C, B2B, and service businesses. Managing Google Ads and Microsoft Ads accounts spending over $100,000 per day, plus Meta Ads, LinkedIn Ads, and virtually any pay-per-click platform.
 
-Stats: 10+ years of experience. $100K+ daily ad spend managed. 5X-36X account growth delivered.
+Experience: 10+ years. $100K+ daily ad spend managed.
 
-## Deep Platform Expertise
+## Paid search is where I live.
 
 Paid search is where I live. Over 10 years running Google Ads and Microsoft Ads accounts at scale means knowing the auction mechanics, the bid strategy tradeoffs, and the reporting quirks well enough to know when to trust the platform's automation and when to override it.
 
@@ -46,13 +52,13 @@ I've run paid search and lead generation campaigns across health insurance (ACA,
 
 ---
 
-## Case Studies — https://kseniiashermin.com/case-studies/
+## Case Studies : https://kseniiashermin.com/case-studies/
 
 # Paid Search & PPC Case Studies
 
 Case studies drawn from real accounts I've managed. Screenshots are watermarked; client names shown only where permitted.
 
-### Health Insurance — iHealthQuotes.com
+### Health Insurance : iHealthQuotes.com
 **Context:** As Director of Marketing at P7 Ventures, led multi-channel paid search strategy for this health insurance brand across all business units.
 **Platforms:** Google Ads, Microsoft Ads, other PPC platforms, vendors
 **What I did:**
@@ -61,7 +67,7 @@ Case studies drawn from real accounts I've managed. Screenshots are watermarked;
 - Architected automated data pipelines for real-time ROI tracking and full performance transparency
 **Result:** Scaled the whole lead gen program 5X in 2 years, helping the brand reach #24 on the Inc. 5000 list in 2025. Source: https://www.inc.com/profile/ihealthquotes
 
-### Mental Health — Riverhouse Wellness (riverhousewellness.com)
+### Mental Health : Riverhouse Wellness (riverhousewellness.com)
 **Context:** Built the entire performance marketing infrastructure for a new mental health and substance use disorder treatment brand from scratch, as part of P7 Ventures' behavioral health business unit.
 **Platforms:** Google Ads, Microsoft Ads, vendors, and specialized platforms such as recovery.com
 **What I did:**
@@ -79,7 +85,7 @@ Case studies drawn from real accounts I've managed. Screenshots are watermarked;
 - Recruited, trained, and managed a team of PPC specialists
 **Result:** Consistently hit KPI and daily budget targets across all six verticals, and scaled the health insurance vertical by 25X.
 
-### E-commerce (Home Appliances) — E-techno
+### E-commerce (Home Appliances) : E-techno
 **Context:** Managed paid search for a large e-commerce catalog spanning 30,000+ items in home appliances, plus a wide range of consumer product categories including electronics, home goods, outdoor, personal care, and apparel.
 **Platforms:** Paid Search
 **What I did:**
@@ -89,11 +95,11 @@ Case studies drawn from real accounts I've managed. Screenshots are watermarked;
 
 ---
 
-## Blog — https://kseniiashermin.com/blog/
+## Blog : https://kseniiashermin.com/blog/
 
 Articles on paid search and PPC, written from hands-on account management. Full posts below.
 
-### Microsoft Ads vs Google Ads: Cost, Competition, and Bot Traffic (2026 Data) — https://kseniiashermin.com/blog/microsoft-ads-vs-google-ads/
+### Microsoft Ads vs Google Ads: Cost, Competition, and Bot Traffic (2026 Data) : https://kseniiashermin.com/blog/microsoft-ads-vs-google-ads/
 
 Published September 4, 2026.
 
@@ -115,7 +121,7 @@ Full article, benchmark table, and sources at the URL above.
 
 ---
 
-## Work With Me (Services) — https://kseniiashermin.com/services/
+## Work With Me (Services) : https://kseniiashermin.com/services/
 
 # Work With Me
 
@@ -149,7 +155,7 @@ Yes, if needed.
 
 ---
 
-## For Employers — https://kseniiashermin.com/for-employers/
+## For Employers : https://kseniiashermin.com/for-employers/
 
 # Looking to Hire a Performance Marketing Manager
 
@@ -172,7 +178,7 @@ Full account history and results are on the case studies page (/case-studies), a
 
 ---
 
-## About — https://kseniiashermin.com/about/
+## About : https://kseniiashermin.com/about/
 
 # About Me
 
@@ -208,9 +214,9 @@ I'm AI-native: I build AI agents that help manage accounts, automate data pipeli
 
 ## What Clients & Colleagues Say
 
-"Sienna is a terrific SEM manager! She is extremely knowledgeable about all things Google Ads and she knows how to deliver results. During the high seasons in our business, Sienna always showed up ready to deliver value, regardless of how long the hours were. Thank you Sienna for all the support and hard work!!!" — Rodolfo Marrero, CTO & Co-Founder at Excel Impact, LLC (LinkedIn recommendation, November 2024)
+"Sienna is a terrific SEM manager! She is extremely knowledgeable about all things Google Ads and she knows how to deliver results. During the high seasons in our business, Sienna always showed up ready to deliver value, regardless of how long the hours were. Thank you Sienna for all the support and hard work!!!" : Rodolfo Marrero, CTO & Co-Founder at Excel Impact, LLC (LinkedIn recommendation, November 2024)
 
-"I had the chance to work with Sienna on several projects in the behavioral healthcare space. She has strong experience with Paid Search, lead generation, and campaign management across Google and Bing Ads, including large daily budgets over $100K. What I liked about working with her was that she always focused not just on traffic, but on lead quality and overall business goals. She understands healthcare marketing well, works great with the team, and is very organized and professional in her work. Sienna is very experienced in PPC and digital marketing, and I'd definitely recommend her to any company looking for a strong paid search specialist." — Georgii Liapko, Senior SEO & Digital Marketing Manager (LinkedIn recommendation, May 2026)
+"I had the chance to work with Sienna on several projects in the behavioral healthcare space. She has strong experience with Paid Search, lead generation, and campaign management across Google and Bing Ads, including large daily budgets over $100K. What I liked about working with her was that she always focused not just on traffic, but on lead quality and overall business goals. She understands healthcare marketing well, works great with the team, and is very organized and professional in her work. Sienna is very experienced in PPC and digital marketing, and I'd definitely recommend her to any company looking for a strong paid search specialist." : Georgii Liapko, Senior SEO & Digital Marketing Manager (LinkedIn recommendation, May 2026)
 
 "Meeting Kseniia was a great pleasure. She's extremely knowledgeable about PPC, both on Google and Bing, something many people claim to know, but few actually possess. I highly recommend her for any project, especially if it involves insurance." (30 minute consultation, 5 stars)
 
@@ -224,18 +230,18 @@ I'm AI-native: I build AI agents that help manage accounts, automate data pipeli
 
 ---
 
-## Contact — https://kseniiashermin.com/contact/
+## Contact : https://kseniiashermin.com/contact/
 
-# Let's Talk
+# What's next for your paid search?
 
 Tell me a bit about your account and what you're looking for, and I'll follow up within 1-2 business days.
 
-Contact form fields: name, email, approximate monthly ad spend (Under $10,000 / $10,000-$50,000 / $50,000-$200,000 / $200,000+), what you're looking for (Audit / Consultation / Ongoing management / Full-time or fractional role), and a free-text message.
+Contact form fields: name, email, optional approximate monthly ad spend (Not applicable, hiring inquiry / Under $10,000 / $10,000-$50,000 / $50,000-$200,000 / $200,000+), what you're looking for (Audit / Consultation / Ongoing management / Full-time or fractional role), and a free-text message.
 
 Prefer to book directly: https://cal.com/kseniiashermin/15min
 
 ---
 
-## Privacy Policy — https://kseniiashermin.com/privacy-policy/
+## Privacy Policy : https://kseniiashermin.com/privacy-policy/
 
 This site collects contact-form submissions (name, email, budget range, interest, message) via Web3Forms, used only to respond to inquiries. Analytics (Google Analytics 4, Microsoft Clarity) load only after cookie-banner consent. Cloudflare Web Analytics is cookie-free. No data is sold or shared beyond what's needed to deliver a form submission. Full policy at /privacy-policy.
