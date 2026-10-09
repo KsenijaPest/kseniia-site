@@ -108,7 +108,6 @@ import { testimonials } from '../data/testimonials';
         <div class:list={["split-card", "testimonial-card", { "testimonial-card-screenshot": t.screenshot }]}>
           {t.screenshot ? (
             <blockquote class="testimonial-quote">{t.quote}</blockquote>
-            <p><strong>{t.name}</strong><br />{t.title}</p>
             <details><summary>View original recommendation</summary>
               <img src={t.screenshot} alt="Screenshot of the original LinkedIn recommendation. The full text is quoted above." width={t.screenshotWidth} height={t.screenshotHeight} loading="lazy" />
             </details>
