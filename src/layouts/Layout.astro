@@ -62,12 +62,38 @@ const ogImageURL = new URL('/og-image.png', Astro.site);
     <script is:inline>
       const GA4_ID = 'G-ZSQEP4F77K';
       const CLARITY_ID = 'y4fkcqivic';
+      const CONSENT_MAX_AGE_MS = 365 * 24 * 60 * 60 * 1000;
       let analyticsLoaded = false;
       let consentState = null;
-      try { consentState = localStorage.getItem('cookie-consent'); } catch {}
+      try {
+        const stored = localStorage.getItem('cookie-consent');
+        const storedAt = Number(localStorage.getItem('cookie-consent-at'));
+        if ((stored === 'accepted' || stored === 'declined') && storedAt && Date.now() - storedAt < CONSENT_MAX_AGE_MS) {
+          consentState = stored;
+        }
+      } catch {}
+      // Global Privacy Control and Do Not Track count as a decline when the visitor has made no explicit choice.
+      if (consentState === null && (navigator.globalPrivacyControl === true || navigator.doNotTrack === '1' || window.doNotTrack === '1')) {
+        consentState = 'declined';
+      }
       function saveConsent(value) {
         consentState = value;
-        try { localStorage.setItem('cookie-consent', value); } catch {}
+        try {
+          localStorage.setItem('cookie-consent', value);
+          localStorage.setItem('cookie-consent-at', String(Date.now()));
+        } catch {}
+      }
+      function clearAnalyticsCookies() {
+        const names = document.cookie.split(';').map((c) => c.split('=')[0].trim())
+          .filter((n) => /^(_ga|_gid|_gat|_clck|_clsk|CLID|ANONCHK|MR|MUID|SM|SRM_B)/.test(n));
+        const parts = location.hostname.split('.');
+        const domains = new Set([location.hostname]);
+        for (let i = 0; i <= parts.length - 2; i++) domains.add('.' + parts.slice(i).join('.'));
+        names.forEach((name) => {
+          const expired = name + '=; expires=Thu, 01 Jan 1970 00:00:00 GMT; path=/';
+          document.cookie = expired;
+          domains.forEach((domain) => { document.cookie = expired + '; domain=' + domain; });
+        });
       }
       function trackInquiryEvent(name, parameters) {
         if (consentState === 'accepted' && typeof window.gtag === 'function') {
@@ -103,7 +129,7 @@ const ogImageURL = new URL('/og-image.png', Astro.site);
         function gtag(...args) { window.dataLayer.push(args); }
         window.gtag = gtag;
         gtag('js', new Date());
-        gtag('config', GA4_ID);
+        gtag('config', GA4_ID, { allow_google_signals: false, allow_ad_personalization_signals: false });
       }
 
       function loadClarity() {
@@ -112,6 +138,7 @@ const ogImageURL = new URL('/og-image.png', Astro.site);
           t = l.createElement(r); t.async = 1; t.src = 'https://www.clarity.ms/tag/' + i;
           y = l.getElementsByTagName(r)[0]; y.parentNode.insertBefore(t, y);
         })(window, document, 'clarity', 'script', CLARITY_ID);
+        window.clarity('consentv2', { ad_Storage: 'denied', analytics_Storage: 'granted' });
       }
 
       if (consentState === 'accepted') {
@@ -152,22 +179,27 @@ const ogImageURL = new URL('/og-image.png', Astro.site);
         <a href="https://www.linkedin.com/in/kseniiashermin/" target="_blank" rel="noopener">Kseniia Shermin on LinkedIn</a>
         <span class="footer-sep">&middot;</span>
         <a href="/privacy-policy/">Privacy Policy</a>
+        <span class="footer-sep">&middot;</span>
+        <a href="/terms/">Terms</a>
+        <span class="footer-sep">&middot;</span>
+        <a href="/accessibility/">Accessibility</a>
+        <span class="footer-sep">&middot;</span>
+        <button type="button" class="link-button" id="cookie-settings">Cookie settings</button>
       </p>
     </footer>
 
-    <div class="cookie-banner" id="cookie-banner" hidden>
-      <p>This site uses analytics cookies to understand traffic. Declining won't affect your experience.</p>
+    <div class="cookie-banner" id="cookie-banner" role="region" aria-label="Cookie consent" hidden>
+      <p>With your permission, this site uses Google Analytics and Microsoft Clarity (which records how visitors click and scroll) to understand and improve the site. Nothing loads unless you accept. <a href="/privacy-policy/">Privacy policy</a></p>
       <div class="cookie-banner-actions">
-        <button type="button" class="btn btn-secondary" id="cookie-decline">Decline</button>
-        <button type="button" class="btn btn-primary" id="cookie-accept">Accept</button>
+        <button type="button" class="btn consent-btn" id="cookie-decline">Decline</button>
+        <button type="button" class="btn consent-btn" id="cookie-accept">Accept</button>
       </div>
     </div>
 
     <script is:inline>
       const banner = document.getElementById('cookie-banner');
-      const consent = consentState;
 
-      if (consent !== 'accepted' && consent !== 'declined') {
+      if (consentState !== 'accepted' && consentState !== 'declined') {
         banner?.removeAttribute('hidden');
       }
 
@@ -179,8 +211,18 @@ const ogImageURL = new URL('/og-image.png', Astro.site);
       });
 
       document.getElementById('cookie-decline')?.addEventListener('click', () => {
+        const wasLoaded = analyticsLoaded;
         saveConsent('declined');
         banner?.setAttribute('hidden', '');
+        if (wasLoaded) {
+          clearAnalyticsCookies();
+          location.reload();
+        }
+      });
+
+      document.getElementById('cookie-settings')?.addEventListener('click', () => {
+        banner?.removeAttribute('hidden');
+        document.getElementById('cookie-decline')?.focus();
       });
     </script>
 
@@ -518,6 +560,25 @@ const ogImageURL = new URL('/og-image.png', Astro.site);
   .cookie-banner-actions .btn {
     padding: 0.5rem 1.1rem;
     font-size: 0.85rem;
+  }
+
+  .consent-btn {
+    background: transparent;
+    color: var(--color-accent);
+    border: 1px solid var(--color-accent);
+    cursor: pointer;
+    font-family: inherit;
+  }
+  .consent-btn:hover { background: var(--color-accent-light); }
+
+  .link-button {
+    background: none;
+    border: 0;
+    padding: 0;
+    font: inherit;
+    color: var(--color-muted);
+    text-decoration: underline;
+    cursor: pointer;
   }
 
   @media (max-width: 640px) {

@@ -16,3 +16,6 @@ Detailed site content and article summary: https://kseniiashermin.com/llms-full.
 - [For Employers](https://kseniiashermin.com/for-employers/): Paid search leadership, team development, acquisition infrastructure, reporting, and verified results for Head of Growth, Paid Search Director, and Senior Performance Marketing Manager conversations. Open to remote roles or hybrid roles in the San Francisco Bay Area, alongside client engagements.
 - [About](https://kseniiashermin.com/about/): Full career history and client testimonials.
 - [Contact](https://kseniiashermin.com/contact/): Contact form and direct booking link.
+- [Privacy Policy](https://kseniiashermin.com/privacy-policy/): What the site collects, analytics consent, and how to make a privacy request.
+- [Terms of Use](https://kseniiashermin.com/terms/): Disclaimers, no guarantee of results, and trademark notice.
+- [Accessibility Statement](https://kseniiashermin.com/accessibility/): Accessibility commitments and how to report a problem.

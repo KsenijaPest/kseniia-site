@@ -3,7 +3,7 @@ interface Props { source?: string; compact?: boolean; }
 const { source = 'contact-page', compact = false } = Astro.props;
 const prefix = `inquiry-${source}`;
 ---
-<form action="https://api.web3forms.com/submit" method="POST" data-inquiry-form data-source={source} class:list={{ compact }}>
+<form action="https://api.web3forms.com/submit" method="POST" data-inquiry-form data-source={source} data-clarity-mask="True" class:list={{ compact }}>
   <input type="hidden" name="access_key" value="067d94ff-2b9f-4d41-9199-09d942719de8" />
   <input type="hidden" name="redirect" value="https://kseniiashermin.com/thank-you/" />
   <input type="hidden" name="form_source" value={source} />

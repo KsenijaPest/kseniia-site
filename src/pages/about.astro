@@ -110,7 +110,7 @@ import { testimonials } from '../data/testimonials';
             <blockquote class="testimonial-quote">{t.quote}</blockquote>
             <p><strong>{t.name}</strong><br />{t.title}</p>
             <details><summary>View original recommendation</summary>
-              <img src={t.screenshot} alt={`LinkedIn recommendation from ${t.name}`} width={t.screenshotWidth} height={t.screenshotHeight} loading="lazy" />
+              <img src={t.screenshot} alt="Screenshot of the original LinkedIn recommendation. The full text is quoted above." width={t.screenshotWidth} height={t.screenshotHeight} loading="lazy" />
             </details>
           ) : (
             <>

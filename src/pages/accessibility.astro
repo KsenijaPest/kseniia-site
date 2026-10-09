@@ -1,0 +1,43 @@
+---
+import Layout from '../layouts/Layout.astro';
+
+const REVIEWED_DATE = 'October 8, 2026';
+---
+
+<Layout
+  title="Accessibility Statement"
+  description="How kseniiashermin.com works toward WCAG 2.1 AA accessibility, known limitations, and how to report a problem."
+>
+  <section>
+    <h1>Accessibility Statement</h1>
+    <p class="updated-note">Last reviewed: {REVIEWED_DATE}</p>
+    <p>I want this site to be usable by everyone, including people who use screen readers, keyboards, or other assistive technology. I aim to meet the Web Content Accessibility Guidelines (WCAG) 2.1, level AA.</p>
+  </section>
+
+  <section>
+    <h2>What is in place</h2>
+    <ul>
+      <li>Semantic page structure with headings and landmarks, and a "Skip to content" link.</li>
+      <li>Full keyboard navigation with a visible focus outline.</li>
+      <li>Text alternatives for images and infographics.</li>
+      <li>Color contrast checked against WCAG AA.</li>
+      <li>Labeled form fields and a status message after form submission.</li>
+      <li>Animations that stop when your device is set to reduce motion.</li>
+    </ul>
+    <p>I run automated accessibility checks (Lighthouse) on every page and review them again when the site changes.</p>
+  </section>
+
+  <section>
+    <h2>Known limitations</h2>
+    <ul>
+      <li>The scheduling page on Cal.com and the LinkedIn profile are third-party services outside my control.</li>
+      <li>Automated checks do not catch everything, so some issues may remain.</li>
+    </ul>
+  </section>
+
+  <section>
+    <h2>Report a problem</h2>
+    <p>If something on this site is hard to use, please tell me through the <a href="/contact/">Contact form</a> and write "Accessibility" in the message. Say which page and what happened. I will reply within a few business days and can provide the information in another format on request.</p>
+    <p>See also the <a href="/privacy-policy/">Privacy Policy</a> and <a href="/terms/">Terms of use</a>.</p>
+  </section>
+</Layout>

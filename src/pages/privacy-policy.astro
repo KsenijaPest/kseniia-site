@@ -1,84 +1,86 @@
 ---
 import Layout from '../layouts/Layout.astro';
 
+const POLICY_DATE = 'October 8, 2026';
 ---
 
 <Layout
   title="Privacy Policy"
-  description="What information this site collects, why, and how to request it be removed."
+  description="What information kseniiashermin.com collects, why, who it is shared with, and how to access, correct, or delete it."
 >
   <section>
     <h1>Privacy Policy</h1>
-    <p class="updated-note">Updated: September 12, 2026</p>
-    <p>
-      This page explains what information kseniiashermin.com collects, why, and how you
-      can ask me to change or delete it. This is a personal site run by one person
-      (Kseniia Shermin), not a company with a dedicated legal or privacy team, so this
-      policy is written in plain language rather than formal legal terms.
-    </p>
+    <p class="updated-note">Last updated: {POLICY_DATE}</p>
+    <p>This page explains what information kseniiashermin.com collects, why, who processes it, and how you can ask me to access, correct, or delete it. This site is operated by one person, Kseniia Shermin, an individual based in California, USA. I wrote this policy in plain language.</p>
   </section>
 
   <section>
     <h2>What this site collects</h2>
+
     <h3>The contact form</h3>
-    <p>
-      If you fill out the form on the homepage or <a href="/contact/">Contact page</a>, it collects
-      your name, email address, approximate ad spend range, what you're looking for, and
-      whatever you write in the message field. That submission is processed by
-      Web3Forms (a third-party form service) and delivered to me by email. I use it only
-      to reply to your inquiry. I don't add you to a mailing list, sell it, or share it
-      with anyone else.
-    </p>
+    <p>If you use the inquiry form (on the homepage, in the quick-inquiry window, or on the <a href="/contact/">Contact page</a>), I collect your name, email address, what you are looking for, an optional ad spend range, and whatever you write in the message field. The submission is processed by Web3Forms, a third-party form service, and delivered to me by email. I use it only to reply to your inquiry and to keep a record of the conversation. I do not add you to a mailing list.</p>
+
     <h3>Booking a call</h3>
-    <p>
-      The "Book a Call" link goes to Cal.com, a third-party scheduling tool. Anything you
-      enter there (name, email, meeting time) is handled under
-      <a href="https://cal.com/privacy" target="_blank" rel="noopener">Cal.com's own privacy policy</a>,
-      not this one.
-    </p>
-    <h3>Analytics</h3>
-    <p>
-      This site uses Google Analytics 4 and Microsoft Clarity to understand traffic and
-      how visitors use the site. Both use cookies and only load after you accept the
-      cookie banner. If you decline or don't respond, neither loads, and no analytics
-      cookies are set. It may also use Cloudflare Web Analytics, which is cookie-free and
-      doesn't require consent.
-    </p>
-    <p>With analytics consent, this site records inquiry-link clicks, booking-link clicks, form starts, and submissions confirmed by the form service. These events identify the form location and selected service or hiring interest. The custom inquiry events do not include your name, email address, or message. A booking-link click does not confirm that a meeting was booked.</p>
-    <h3>Hosting</h3>
-    <p>
-      This site is served through Cloudflare. Like virtually all web hosts, Cloudflare's
-      infrastructure sees standard server-log data (IP address, browser type, request
-      timestamps) for every visitor, as a normal part of delivering the page. I don't
-      access this data individually; it exists at the infrastructure level.
-    </p>
+    <p>The "Book a Call" and "Choose a time" links go to Cal.com, a third-party scheduling service. What you enter there (name, email, meeting time) is handled under <a href="https://cal.com/privacy" target="_blank" rel="noopener">Cal.com's privacy policy</a>.</p>
+
+    <h3>Analytics (only if you accept)</h3>
+    <p>This site uses two analytics tools. Neither loads, and neither sets cookies, unless you click Accept on the cookie banner.</p>
+    <ul>
+      <li><strong>Google Analytics 4</strong> records page views, approximate location derived from your IP address, device and browser type, and a few events: inquiry-link clicks, booking-link clicks, form starts, and submissions confirmed by the form service. These events identify the form location and the selected service or hiring interest. They do not include your name, email address, or message. A booking-link click does not confirm that a meeting was booked. I have turned off Google signals and ad personalization. Cookies: <code>_ga</code> and <code>_ga_*</code>.</li>
+      <li><strong>Microsoft Clarity</strong> creates session recordings and heatmaps. This means it records how visitors move the mouse, click, scroll, and which pages they view, so I can see where the site is confusing. Text you type into the inquiry form is masked and is not captured. Cookies: <code>_clck</code> and <code>_clsk</code>.</li>
+    </ul>
+    <p>Google and Microsoft process this data under their own privacy terms: <a href="https://policies.google.com/privacy" target="_blank" rel="noopener">Google</a> and <a href="https://privacy.microsoft.com/privacystatement" target="_blank" rel="noopener">Microsoft</a>.</p>
+
+    <h3>Hosting and security</h3>
+    <p>This site is served through Cloudflare. Like any web host, Cloudflare's infrastructure processes standard technical data (IP address, browser type, request timestamps) to deliver pages and protect the site from abuse. I do not access this data individually.</p>
+
+    <h3>Your cookie choice</h3>
+    <p>Your Accept or Decline choice is stored in your browser's local storage for up to 12 months, after which I ask again. It is not sent to me.</p>
   </section>
 
   <section>
-    <h2>What this site does not do</h2>
+    <h2>Your choices about tracking</h2>
     <ul>
-      <li>Doesn't sell or rent your information to anyone.</li>
-      <li>Doesn't share contact-form submissions with third parties beyond the services listed above (Web3Forms, to deliver the message to me).</li>
-      <li>Doesn't run retargeting or ad-tracking pixels.</li>
+      <li>You can accept or decline analytics on the banner, and change your mind at any time with the "Cookie settings" link in the footer. Declining after accepting removes the analytics cookies.</li>
+      <li>If your browser sends a Global Privacy Control or Do Not Track signal and you have not made a choice on the banner, I treat it as a decline and analytics do not load.</li>
+      <li>You can also block or delete cookies in your browser settings.</li>
     </ul>
   </section>
 
   <section>
+    <h2>Who receives your information</h2>
+    <p>Only the service providers needed to run the site and handle your inquiry: Web3Forms (form delivery), Cloudflare (hosting and security), Cal.com (only if you book a call), and Google and Microsoft (only if you accept analytics). I do not sell your personal information, I do not share it for cross-context behavioral advertising, and this site does not run advertising or retargeting pixels.</p>
+    <p>These providers are mostly based in the United States and may process data there and in other countries. Their own privacy policies describe how they protect it.</p>
+  </section>
+
+  <section>
+    <h2>How long I keep information</h2>
+    <p>Inquiry emails are kept for as long as needed to respond to you and for my business records, then deleted, and I delete them sooner if you ask. Analytics data is kept by Google and Microsoft under the retention settings I configure, and not longer than needed to understand how the site is used.</p>
+  </section>
+
+  <section>
     <h2>Your rights</h2>
-    <p>
-      You can ask me at any time to tell you what information I have about you, correct
-      it, or delete it. The fastest way to reach me is through the
-      <a href="/contact/">Contact form</a> or a message on
-      <a href="https://www.linkedin.com/in/kseniiashermin/" target="_blank" rel="noopener">LinkedIn</a>.
-      I'll respond within a reasonable time.
-    </p>
+    <p>You can ask me to tell you what personal information I hold about you, correct it, delete it, or stop using it for a purpose you object to. You can also withdraw analytics consent at any time (see above).</p>
+    <ul>
+      <li><strong>California residents</strong> have the right to know what personal information is collected and why, to request deletion or correction, to opt out of the sale or sharing of personal information (I do neither), and not to be treated differently for using these rights.</li>
+      <li><strong>Visitors in the European Economic Area or the United Kingdom</strong> have the right to access, correct, erase, restrict, or object to processing of their data, to data portability, and to complain to their local data protection authority. My legal bases are legitimate interests in replying to inquiries and your consent for analytics.</li>
+    </ul>
+    <p>To make a request, use the <a href="/contact/">Contact form</a> and write "Privacy request" in the message, or message me on <a href="https://www.linkedin.com/in/kseniiashermin/" target="_blank" rel="noopener">LinkedIn</a>. I may need to confirm your identity first. I respond within the time required by applicable law, usually 30 to 45 days.</p>
+  </section>
+
+  <section>
+    <h2>Children</h2>
+    <p>This site is for business and professional use and is not directed to children under 16. I do not knowingly collect their information.</p>
+  </section>
+
+  <section>
+    <h2>Security and third-party links</h2>
+    <p>I use reasonable measures to protect the information you send, but no method of transmission or storage is completely secure. This site links to other websites, such as LinkedIn and Cal.com, which have their own privacy practices that I do not control.</p>
   </section>
 
   <section>
     <h2>Changes to this policy</h2>
-    <p>
-      If what this site collects or how it's used changes, this page will be updated to
-      reflect that. The date at the top shows the last update.
-    </p>
+    <p>If what this site collects or how it is used changes, I will update this page and change the date at the top. The date changes only when the policy itself changes.</p>
+    <p>See also the <a href="/terms/">Terms of use</a> and the <a href="/accessibility/">Accessibility statement</a>.</p>
   </section>
 </Layout>

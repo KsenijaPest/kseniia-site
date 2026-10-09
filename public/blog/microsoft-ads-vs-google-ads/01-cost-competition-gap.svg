@@ -7,7 +7,7 @@
 
   <rect x="0" y="0" width="900" height="560" fill="#ffffff"/>
 
-  <text x="450" y="46" text-anchor="middle" fill="#6b7280" font-size="15" letter-spacing="1.5" font-weight="600">2026 BENCHMARK DATA</text>
+  <text x="450" y="46" text-anchor="middle" fill="#4b5563" font-size="15" letter-spacing="1.5" font-weight="600">2026 BENCHMARK DATA</text>
   <text x="450" y="82" text-anchor="middle" fill="#14161f" font-size="28" font-family="Georgia, 'Times New Roman', serif" font-weight="700">Cost &amp; Competition, Side by Side</text>
 
   <!-- Google card -->
@@ -25,12 +25,12 @@
   <text x="156" y="186" fill="#14161f" font-size="19" font-weight="700">Google Ads</text>
 
   <text x="96" y="248" fill="#2563eb" font-size="40" font-family="Georgia, 'Times New Roman', serif" font-weight="700">$2.85&#8211;$5.26</text>
-  <text x="96" y="272" fill="#6b7280" font-size="14">average cost per click</text>
+  <text x="96" y="272" fill="#4b5563" font-size="14">average cost per click</text>
 
   <line x1="96" y1="296" x2="384" y2="296" stroke="#e5e7eb" stroke-width="1"/>
 
   <text x="96" y="340" fill="#2563eb" font-size="40" font-family="Georgia, 'Times New Roman', serif" font-weight="700">~80%</text>
-  <text x="96" y="364" fill="#6b7280" font-size="14">of US advertisers run it</text>
+  <text x="96" y="364" fill="#4b5563" font-size="14">of US advertisers run it</text>
   <text x="96" y="386" fill="#14161f" font-size="13">Crowded auction, higher price to win the click</text>
 
   <!-- Microsoft card -->
@@ -48,12 +48,12 @@
   <text x="568" y="182" fill="#14161f" font-size="19" font-weight="700">Microsoft Ads</text>
 
   <text x="516" y="248" fill="#2563eb" font-size="40" font-family="Georgia, 'Times New Roman', serif" font-weight="700">$1.50&#8211;$2.80</text>
-  <text x="516" y="272" fill="#6b7280" font-size="14">average cost per click</text>
+  <text x="516" y="272" fill="#4b5563" font-size="14">average cost per click</text>
 
   <line x1="516" y1="296" x2="804" y2="296" stroke="#e5e7eb" stroke-width="1"/>
 
   <text x="516" y="340" fill="#2563eb" font-size="40" font-family="Georgia, 'Times New Roman', serif" font-weight="700">~36%</text>
-  <text x="516" y="364" fill="#6b7280" font-size="14">of US advertisers run it</text>
+  <text x="516" y="364" fill="#4b5563" font-size="14">of US advertisers run it</text>
   <text x="516" y="386" fill="#14161f" font-size="13">Thinner auction, lower price to win the click</text>
 
   <!-- Bottom highlight strip -->
@@ -63,5 +63,5 @@
   <text x="450" y="486" text-anchor="middle" fill="#ffffff" font-size="22" font-family="Georgia, 'Times New Roman', serif" font-weight="700">25&#8211;40% cheaper clicks on Microsoft</text>
   <text x="450" y="510" text-anchor="middle" fill="#eaf1ff" font-size="13">Fewer advertisers bidding, not a smarter algorithm</text>
 
-  <text x="450" y="550" text-anchor="middle" fill="#6b7280" font-size="11">Sources: WordStream/LocaliQ, BrightBid, Lionheart, Improvado, 2026 benchmark reports. Advertiser share is an industry estimate. kseniiashermin.com</text>
+  <text x="450" y="550" text-anchor="middle" fill="#4b5563" font-size="11">Sources: WordStream/LocaliQ, BrightBid, Lionheart, Improvado, 2026 benchmark reports. Advertiser share is an industry estimate. kseniiashermin.com</text>
 </svg>

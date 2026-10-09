@@ -7,7 +7,7 @@
 
   <rect x="0" y="0" width="900" height="520" fill="#ffffff"/>
 
-  <text x="450" y="46" text-anchor="middle" fill="#6b7280" font-size="15" letter-spacing="1.5" font-weight="600">HOW I KEEP AN ACCOUNT CLEAN</text>
+  <text x="450" y="46" text-anchor="middle" fill="#4b5563" font-size="15" letter-spacing="1.5" font-weight="600">HOW I KEEP AN ACCOUNT CLEAN</text>
   <text x="450" y="82" text-anchor="middle" fill="#14161f" font-size="28" font-family="Georgia, 'Times New Roman', serif" font-weight="700">The Weekly Microsoft Ads Check</text>
 
   <!-- 3 cards, centered -->
@@ -23,9 +23,9 @@
     <line x1="6" y1="21" x2="26" y2="21"/>
   </g>
   <text x="150" y="256" fill="#14161f" font-size="15" font-weight="700">Publisher report</text>
-  <text x="150" y="278" fill="#6b7280" font-size="12.5">Pull the Website URL</text>
-  <text x="150" y="294" fill="#6b7280" font-size="12.5">(Publisher) report weekly,</text>
-  <text x="150" y="310" fill="#6b7280" font-size="12.5">not monthly</text>
+  <text x="150" y="278" fill="#4b5563" font-size="12.5">Pull the Website URL</text>
+  <text x="150" y="294" fill="#4b5563" font-size="12.5">(Publisher) report weekly,</text>
+  <text x="150" y="310" fill="#4b5563" font-size="12.5">not monthly</text>
 
   <!-- Card 2 -->
   <g filter="url(#cardShadow3)">
@@ -39,9 +39,9 @@
     <line x1="30" y1="30" x2="26" y2="26"/>
   </g>
   <text x="380" y="256" fill="#14161f" font-size="15" font-weight="700">Negative site list</text>
-  <text x="380" y="278" fill="#6b7280" font-size="12.5">Add junk placements to a</text>
-  <text x="380" y="294" fill="#6b7280" font-size="12.5">shared exclusion list at the</text>
-  <text x="380" y="310" fill="#6b7280" font-size="12.5">manager account level</text>
+  <text x="380" y="278" fill="#4b5563" font-size="12.5">Add junk placements to a</text>
+  <text x="380" y="294" fill="#4b5563" font-size="12.5">shared exclusion list at the</text>
+  <text x="380" y="310" fill="#4b5563" font-size="12.5">manager account level</text>
 
   <!-- Card 3 -->
   <g filter="url(#cardShadow3)">
@@ -53,11 +53,11 @@
     <path d="M25 2 L34 2 L34 11"/>
   </g>
   <text x="610" y="256" fill="#14161f" font-size="15" font-weight="700">Search terms</text>
-  <text x="610" y="278" fill="#6b7280" font-size="12.5">Review at least weekly,</text>
-  <text x="610" y="294" fill="#6b7280" font-size="12.5">more during a launch or a</text>
-  <text x="610" y="310" fill="#6b7280" font-size="12.5">budget increase</text>
+  <text x="610" y="278" fill="#4b5563" font-size="12.5">Review at least weekly,</text>
+  <text x="610" y="294" fill="#4b5563" font-size="12.5">more during a launch or a</text>
+  <text x="610" y="310" fill="#4b5563" font-size="12.5">budget increase</text>
 
   <text x="450" y="450" text-anchor="middle" fill="#14161f" font-size="14" font-weight="700">This weekly cadence is what keeps a Microsoft Ads account clean.</text>
 
-  <text x="450" y="498" text-anchor="middle" fill="#6b7280" font-size="11">kseniiashermin.com, Microsoft Ads management</text>
+  <text x="450" y="498" text-anchor="middle" fill="#4b5563" font-size="11">kseniiashermin.com, Microsoft Ads management</text>
 </svg>

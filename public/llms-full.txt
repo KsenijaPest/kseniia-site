@@ -240,4 +240,16 @@ Prefer to book directly: https://cal.com/kseniiashermin/15min
 
 ## Privacy Policy : https://kseniiashermin.com/privacy-policy/
 
-This site collects contact-form submissions (name, email, budget range, interest, message) via Web3Forms, used only to respond to inquiries. Analytics (Google Analytics 4, Microsoft Clarity) load only after cookie-banner consent. Cloudflare Web Analytics is cookie-free. No data is sold or shared beyond what's needed to deliver a form submission. Full policy at /privacy-policy.
+Last updated October 8, 2026. This site collects contact-form submissions (name, email, interest, optional ad spend range and message) via Web3Forms, used only to reply to inquiries. Google Analytics 4 and Microsoft Clarity (session recordings and heatmaps, with form fields masked) load only after the visitor accepts the cookie banner; Google signals and ad personalization are off. Global Privacy Control and Do Not Track signals are treated as a decline. Visitors can change their choice with the "Cookie settings" footer link. No personal information is sold or shared for advertising. Rights for California and EEA/UK residents are described, and requests go through the contact form. Full policy at /privacy-policy.
+
+---
+
+## Terms of Use : https://kseniiashermin.com/terms/
+
+Last updated October 8, 2026. Site content is general information, not advice. Results describe specific accounts, roles, and time periods and are not a guarantee. Using the site or contacting Kseniia does not create a client or employment relationship. Third-party names and logos are trademarks of their owners and imply no affiliation. Governed by California law. Full terms at /terms.
+
+---
+
+## Accessibility Statement : https://kseniiashermin.com/accessibility/
+
+Last reviewed October 8, 2026. The site aims to meet WCAG 2.1 level AA and includes a skip link, keyboard navigation with visible focus, text alternatives for images, labeled form fields, and reduced-motion support. Problems can be reported through the contact form. Full statement at /accessibility.
