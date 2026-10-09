@@ -2,14 +2,14 @@ export const testimonials = [
   {
     quote: "Sienna is a terrific SEM manager! She is extremely knowledgeable about all things Google Ads and she knows how to deliver results. During the high seasons in our business, Sienna always showed up ready to deliver value, regardless of how long the hours were. Thank you Sienna for all the support and hard work!!!",
     context: "LinkedIn recommendation, November 2024",
-    screenshot: "/testimonials/rodolfo-marrero.png",
+    screenshot: "/testimonials/recommendation-1.png",
     screenshotWidth: 1554,
     screenshotHeight: 352
   },
   {
     quote: "I had the chance to work with Sienna on several projects in the behavioral healthcare space. She has strong experience with Paid Search, lead generation, and campaign management across Google and Bing Ads, including large daily budgets over $100K. What I liked about working with her was that she always focused not just on traffic, but on lead quality and overall business goals. She understands healthcare marketing well, works great with the team, and is very organized and professional in her work. Sienna is very experienced in PPC and digital marketing, and I'd definitely recommend her to any company looking for a strong paid search specialist.",
     context: "LinkedIn recommendation, May 2026",
-    screenshot: "/testimonials/georgii-liapko.png",
+    screenshot: "/testimonials/recommendation-2.png",
     screenshotWidth: 1562,
     screenshotHeight: 542
   },
