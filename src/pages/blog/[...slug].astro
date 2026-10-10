@@ -27,7 +27,8 @@ const articleSchema = {
   "dateModified": (post.data.updatedDate ?? post.data.publishDate).toISOString(),
   "author": { "@type": "Person", "@id": "https://kseniiashermin.com/#person", "name": "Kseniia Shermin", "url": "https://kseniiashermin.com/about/" },
   "publisher": { "@type": "Person", "@id": "https://kseniiashermin.com/#person", "name": "Kseniia Shermin" },
-  "mainEntityOfPage": `https://kseniiashermin.com/blog/${post.id}/`
+  "mainEntityOfPage": `https://kseniiashermin.com/blog/${post.id}/`,
+  ...(post.data.image && { "image": new URL(post.data.image, 'https://kseniiashermin.com').href })
 };
 
 const faqSchema = post.data.faq.length > 0 ? {
@@ -43,7 +44,7 @@ const faqSchema = post.data.faq.length > 0 ? {
 const schema = faqSchema ? [articleSchema, faqSchema] : [articleSchema];
 ---
 
-<Layout title={post.data.title} description={post.data.description} schema={schema} article>
+<Layout title={post.data.title} description={post.data.description} schema={schema} article ogImage={post.data.image}>
   <article class="post">
     <p class="post-date">
       Published {dateFormatted}{updatedFormatted && ` · Updated ${updatedFormatted}`}

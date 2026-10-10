@@ -111,10 +111,10 @@ FAQ covers: whether Microsoft Ads is cheaper than Google Ads, whether it convert
 
 Full article, benchmark table, and sources at the URL above.
 
-### Google Ads and Microsoft Ads Audit Checklist: What to Check : https://kseniiashermin.com/blog/google-ads-audit-checklist/
+### Google Ads and Microsoft Ads Audit Checklist (2026) : https://kseniiashermin.com/blog/google-ads-audit-checklist/
 
 Published October 9, 2026.
-A 12-point checklist for auditing a Google Ads or Microsoft Ads account: conversion tracking, account settings and structure, campaign settings, keywords and match types, ads and ad extensions (assets), Quality Score, landing pages, performance metrics, audience targeting, budget and bidding, change history, and competitors. Each section lists what to check and the red flags. Conversion tracking comes first because every other finding depends on trustworthy data.
+A 12-point checklist for auditing a Google Ads or Microsoft Ads account: conversion tracking, account settings and structure, campaign settings, keywords and match types, ads and ad extensions (assets), Quality Score, landing pages, performance metrics, audience targeting, budget and bidding, change history, and competitors. Covers 2026 features such as AI Max for Search, Performance Max search terms, enhanced conversions, and Google imports into Microsoft Ads. Each section lists what to check and the red flags. Conversion tracking comes first because every other finding depends on trustworthy data.
 
 ---
 

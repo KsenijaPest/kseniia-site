@@ -19,7 +19,7 @@
   <g filter="url(#cs)"><rect x="675" y="116" width="195" height="118" rx="12" fill="#eaf1ff"/></g>
   <text x="693" y="156" fill="#2563eb" font-size="26" font-family="Georgia, 'Times New Roman', serif" font-weight="700">04</text>
   <text x="693" y="188" fill="#14161f" font-size="14" font-weight="700">Keywords &amp; matches</text>
-  <text x="693" y="210" fill="#4b5563" font-size="12.5">Relevance and negatives</text>
+  <text x="693" y="210" fill="#4b5563" font-size="12.5">Search terms, negatives</text>
   <g filter="url(#cs)"><rect x="30" y="250" width="195" height="118" rx="12" fill="#eaf1ff"/></g>
   <text x="48" y="290" fill="#2563eb" font-size="26" font-family="Georgia, 'Times New Roman', serif" font-weight="700">05</text>
   <text x="48" y="322" fill="#14161f" font-size="14" font-weight="700">Ads &amp; extensions</text>
