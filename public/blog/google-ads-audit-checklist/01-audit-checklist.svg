@@ -1,0 +1,57 @@
+<svg viewBox="0 0 900 590" xmlns="http://www.w3.org/2000/svg" font-family="Helvetica, Arial, sans-serif" role="img">
+  <defs><filter id="cs" x="-20%" y="-20%" width="140%" height="140%"><feDropShadow dx="0" dy="3" stdDeviation="6" flood-color="#14161f" flood-opacity="0.10"/></filter></defs>
+  <rect x="0" y="0" width="900" height="590" fill="#ffffff"/>
+  <text x="450" y="46" text-anchor="middle" fill="#4b5563" font-size="15" letter-spacing="1.5" font-weight="600">PAID SEARCH ACCOUNT AUDIT</text>
+  <text x="450" y="84" text-anchor="middle" fill="#14161f" font-size="28" font-family="Georgia, 'Times New Roman', serif" font-weight="700">The 12-Point Audit Checklist</text>
+  <g filter="url(#cs)"><rect x="30" y="116" width="195" height="118" rx="12" fill="#2563eb"/></g>
+  <text x="48" y="156" fill="#ffffff" font-size="26" font-family="Georgia, 'Times New Roman', serif" font-weight="700">01</text>
+  <text x="207" y="154" text-anchor="end" fill="#ffffff" font-size="11" letter-spacing="1.2" font-weight="700">START HERE</text>
+  <text x="48" y="188" fill="#ffffff" font-size="14" font-weight="700">Conversion tracking</text>
+  <text x="48" y="210" fill="#dbe7ff" font-size="12.5">Count real conversions</text>
+  <g filter="url(#cs)"><rect x="245" y="116" width="195" height="118" rx="12" fill="#eaf1ff"/></g>
+  <text x="263" y="156" fill="#2563eb" font-size="26" font-family="Georgia, 'Times New Roman', serif" font-weight="700">02</text>
+  <text x="263" y="188" fill="#14161f" font-size="14" font-weight="700">Settings &amp; structure</text>
+  <text x="263" y="210" fill="#4b5563" font-size="12.5">Organized logically?</text>
+  <g filter="url(#cs)"><rect x="460" y="116" width="195" height="118" rx="12" fill="#eaf1ff"/></g>
+  <text x="478" y="156" fill="#2563eb" font-size="26" font-family="Georgia, 'Times New Roman', serif" font-weight="700">03</text>
+  <text x="478" y="188" fill="#14161f" font-size="14" font-weight="700">Campaign settings</text>
+  <text x="478" y="210" fill="#4b5563" font-size="12.5">Locations and networks</text>
+  <g filter="url(#cs)"><rect x="675" y="116" width="195" height="118" rx="12" fill="#eaf1ff"/></g>
+  <text x="693" y="156" fill="#2563eb" font-size="26" font-family="Georgia, 'Times New Roman', serif" font-weight="700">04</text>
+  <text x="693" y="188" fill="#14161f" font-size="14" font-weight="700">Keywords &amp; matches</text>
+  <text x="693" y="210" fill="#4b5563" font-size="12.5">Relevance and negatives</text>
+  <g filter="url(#cs)"><rect x="30" y="250" width="195" height="118" rx="12" fill="#eaf1ff"/></g>
+  <text x="48" y="290" fill="#2563eb" font-size="26" font-family="Georgia, 'Times New Roman', serif" font-weight="700">05</text>
+  <text x="48" y="322" fill="#14161f" font-size="14" font-weight="700">Ads &amp; extensions</text>
+  <text x="48" y="344" fill="#4b5563" font-size="12.5">Copy and assets</text>
+  <g filter="url(#cs)"><rect x="245" y="250" width="195" height="118" rx="12" fill="#eaf1ff"/></g>
+  <text x="263" y="290" fill="#2563eb" font-size="26" font-family="Georgia, 'Times New Roman', serif" font-weight="700">06</text>
+  <text x="263" y="322" fill="#14161f" font-size="14" font-weight="700">Quality Score</text>
+  <text x="263" y="344" fill="#4b5563" font-size="12.5">Per-keyword diagnostic</text>
+  <g filter="url(#cs)"><rect x="460" y="250" width="195" height="118" rx="12" fill="#eaf1ff"/></g>
+  <text x="478" y="290" fill="#2563eb" font-size="26" font-family="Georgia, 'Times New Roman', serif" font-weight="700">07</text>
+  <text x="478" y="322" fill="#14161f" font-size="14" font-weight="700">Landing pages</text>
+  <text x="478" y="344" fill="#4b5563" font-size="12.5">Match, speed, mobile</text>
+  <g filter="url(#cs)"><rect x="675" y="250" width="195" height="118" rx="12" fill="#eaf1ff"/></g>
+  <text x="693" y="290" fill="#2563eb" font-size="26" font-family="Georgia, 'Times New Roman', serif" font-weight="700">08</text>
+  <text x="693" y="322" fill="#14161f" font-size="14" font-weight="700">Performance metrics</text>
+  <text x="693" y="344" fill="#4b5563" font-size="12.5">CTR, CPA, trends</text>
+  <g filter="url(#cs)"><rect x="30" y="384" width="195" height="118" rx="12" fill="#eaf1ff"/></g>
+  <text x="48" y="424" fill="#2563eb" font-size="26" font-family="Georgia, 'Times New Roman', serif" font-weight="700">09</text>
+  <text x="48" y="456" fill="#14161f" font-size="14" font-weight="700">Audience targeting</text>
+  <text x="48" y="478" fill="#4b5563" font-size="12.5">Segments, remarketing</text>
+  <g filter="url(#cs)"><rect x="245" y="384" width="195" height="118" rx="12" fill="#eaf1ff"/></g>
+  <text x="263" y="424" fill="#2563eb" font-size="26" font-family="Georgia, 'Times New Roman', serif" font-weight="700">10</text>
+  <text x="263" y="456" fill="#14161f" font-size="14" font-weight="700">Budget &amp; bidding</text>
+  <text x="263" y="478" fill="#4b5563" font-size="12.5">Where the money goes</text>
+  <g filter="url(#cs)"><rect x="460" y="384" width="195" height="118" rx="12" fill="#eaf1ff"/></g>
+  <text x="478" y="424" fill="#2563eb" font-size="26" font-family="Georgia, 'Times New Roman', serif" font-weight="700">11</text>
+  <text x="478" y="456" fill="#14161f" font-size="14" font-weight="700">Change history</text>
+  <text x="478" y="478" fill="#4b5563" font-size="12.5">Who changed what</text>
+  <g filter="url(#cs)"><rect x="675" y="384" width="195" height="118" rx="12" fill="#eaf1ff"/></g>
+  <text x="693" y="424" fill="#2563eb" font-size="26" font-family="Georgia, 'Times New Roman', serif" font-weight="700">12</text>
+  <text x="693" y="456" fill="#14161f" font-size="14" font-weight="700">Competitors</text>
+  <text x="693" y="478" fill="#4b5563" font-size="12.5">Auction insights</text>
+  <text x="450" y="556" text-anchor="middle" fill="#14161f" font-size="15" font-weight="600">Fix tracking first, then wasted spend, then refinements.</text>
+  <text x="870" y="578" text-anchor="end" fill="#4b5563" font-size="11">kseniiashermin.com</text>
+</svg>
