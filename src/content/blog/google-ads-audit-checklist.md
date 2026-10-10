@@ -22,7 +22,7 @@ This checklist works for accounts of any size and any goal, whether the account 
 
 ## The checklist at a glance
 
-1. **Conversion tracking:** only meaningful actions counted, enhanced conversions and consent set up.
+1. **Conversion tracking:** only meaningful actions counted, enhanced conversions, offline conversions, and attribution model.
 2. **Account settings and structure:** auto-applied recommendations reviewed, campaigns organized logically.
 3. **Campaign settings:** locations, networks, bidding, AI Max, and campaign overlap.
 4. **Keywords and search terms:** relevance, match types, negatives, AI Max and Performance Max queries.
@@ -47,7 +47,6 @@ Bidding systems optimize toward whatever the account counts as a conversion. If 
 | Meaningful metrics | Conversion numbers match what the business actually receives | Many reported conversions, few real customers |
 | Duplicates and conversion window | Each lead or sale is counted once, and the window fits the buying cycle | Double counting, or a window shorter than the sales cycle |
 | Enhanced conversions | Turned on and sending data | Off, so conversions that cookies alone miss are not measured |
-| Consent mode | Set up where consent is required, with all required signals passed | Conversions drop for visitors who decline cookies and nobody knows why |
 | Offline conversions | Sales or qualified leads from the CRM imported back when the sale happens offline | The platform optimizes to form fills it cannot tell apart |
 | Attribution model | A deliberate choice between data-driven and last click | Nobody knows which model the account uses |
 
